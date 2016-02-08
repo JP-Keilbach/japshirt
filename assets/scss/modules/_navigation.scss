@@ -25,6 +25,12 @@
 
 /* Tablet and desktop menu */
 .top-bar {
+  display: table;
+  margin: 0 auto;
+
+  .top-bar-right {
+    float: left;
+  }
 
   .menu .home a {
     font-size: 1rem;
@@ -32,16 +38,18 @@
   }
 
   .menu a {
-    height: 45px;
-    line-height: 45px;
+    height: 48px;
+    line-height: 48px;
     color: #e6e6e6;
     padding-top: 0;
     padding-bottom: 0;
-    font-weight: bold;
-    font-size: 0.8rem;
+    font-family: 'franchise', Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: rem-calc(20);
+    text-transform: lowercase;
+    letter-spacing: 2px;
 
     &:hover:not(.button) {
-      background-color: #2a2a2a;
+      background-color: $primary-color;
     }
   }
 

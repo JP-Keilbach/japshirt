@@ -26,7 +26,8 @@ var PATHS = {
   sass: [
     'assets/components/foundation-sites/scss',
     'assets/components/motion-ui/src',
-    'assets/components/fontawesome/scss'
+    'assets/components/fontawesome/scss',
+    'assets/components/font-franchise/scss'
   ],
   javascript: [
     'assets/components/what-input/what-input.js',
@@ -173,7 +174,15 @@ gulp.task('copy', function() {
   var fontAwesome = gulp.src('assets/components/fontawesome/fonts/**/*.*')
       .pipe(gulp.dest('assets/fonts'));
 
-  return merge(motionUi, whatInput, fontAwesome);
+  // Font Franchise
+  var fontFranchise = gulp.src('assets/components/font-franchise/fonts/**/*.*')
+      .pipe(gulp.dest('assets/fonts'));
+
+  // Font Klinic Slab
+  var fontKlinicslab = gulp.src('assets/components/font-klinicslab/fonts/**/*.*')
+      .pipe(gulp.dest('assets/fonts'));
+
+  return merge(motionUi, whatInput, fontAwesome, fontFranchise, fontKlinicslab);
 });
 
 // Package task
