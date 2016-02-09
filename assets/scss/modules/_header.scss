@@ -1,0 +1,24 @@
+#masthead {
+	background-color: $primary-color;
+	height: 552px;
+
+	@include breakpoint(small) {
+		background: url('../images/demo/hero-bg-foundation-6-small.svg') bottom center;
+		background-size: cover;
+		background-position: bottom;
+		padding: rem-calc(24px) 0;
+		margin: 0 0 rem-calc(32);
+		height: auto;
+		position: relative;
+		text-align: left;
+	}
+
+	@include breakpoint(medium) {
+		background: url('../images/demo/hero-bg-foundation-6-large.svg') bottom center;
+		background-size: cover;
+		background-position: center;
+		height: rem-calc(685);
+		margin: 0 0 rem-calc(72);
+	}
+
+}
