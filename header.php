@@ -33,7 +33,7 @@
 
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
-	<header id="masthead" class="site-header front-hero" role="banner">
+	<header id="masthead" class="site-header" role="banner">
 		<div class="title-bar" data-responsive-toggle="site-navigation">
 			<button class="menu-icon" type="button" data-toggle="offCanvas"></button>
 			<div class="title-bar-title">
@@ -47,6 +47,7 @@
 					<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
 				</ul>
 			</div>
+
 			<div class="top-bar-right">
 				<?php foundationpress_top_bar_r(); ?>
 
@@ -54,24 +55,36 @@
 					<?php get_template_part( 'parts/mobile-top-bar' ); ?>
 				<?php endif; ?>
 			</div>
+
+			<div class="top-bar-social hide-for-medium-only">
+				<ul class="menu">
+					<li class="menu-item-social">
+						<a href="http://www.facebook.com/japshirts">
+							<i class="fa fa-facebook-official"></i>
+							<span data-hover="/jabshirt">Facebook</span>
+						</a>
+					</li>
+
+					<li class="menu-item-social">
+						<a href="http://www.instagram.com/japshirt">
+							<i class="fa fa-instagram"></i>
+							<span data-hover="/jabshirt">Instagram</span>
+						</a>
+					</li>
+
+					<li class="menu-item-social">
+						<a href="#">
+							<i class="fa fa-pinterest-square"></i>
+							<span data-hover="/jabshirt">Pinterest</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+
+			<div class="top-bar-social-mobile hide-for-large">
+				<a href="#">Test</a>
+			</div>
 		</nav>
-
-		<div class="marketing">
-			<div class="tagline">
-				<h1><?php bloginfo( 'name' ); ?></h1>
-				<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
-				<a role="button" class="download large button sites-button hide-for-small-only" href="https://github.com/olefredrik/foundationpress">Download FoundationPress</a>
-			</div>
-
-			<div id="watch">
-				<section id="stargazers">
-					<a href="https://github.com/olefredrik/foundationpress">1.5k stargazers</a>
-				</section>
-				<section id="twitter">
-					<a href="https://twitter.com/olefredrik">@olefredrik</a>
-				</section>
-			</div>
-		</div>
 
 	</header>
 
