@@ -61,7 +61,8 @@
     letter-spacing: 2px;
 
     &:hover:not(.button) {
-      background-color: $primary-color;
+      background: rgb(244, 99, 83);
+      background: rgba(244, 99, 83, 0.5);
     }
   }
 
