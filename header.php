@@ -33,7 +33,7 @@
 
 	<?php do_action( 'foundationpress_layout_start' ); ?>
 
-	<header id="masthead" class="site-header" role="banner">
+	<header id="masthead" class="site-header front-hero" role="banner">
 		<div class="title-bar" data-responsive-toggle="site-navigation">
 			<button class="menu-icon" type="button" data-toggle="offCanvas"></button>
 			<div class="title-bar-title">
@@ -55,6 +55,24 @@
 				<?php endif; ?>
 			</div>
 		</nav>
+
+		<div class="marketing">
+			<div class="tagline">
+				<h1><?php bloginfo( 'name' ); ?></h1>
+				<h4 class="subheader"><?php bloginfo( 'description' ); ?></h4>
+				<a role="button" class="download large button sites-button hide-for-small-only" href="https://github.com/olefredrik/foundationpress">Download FoundationPress</a>
+			</div>
+
+			<div id="watch">
+				<section id="stargazers">
+					<a href="https://github.com/olefredrik/foundationpress">1.5k stargazers</a>
+				</section>
+				<section id="twitter">
+					<a href="https://twitter.com/olefredrik">@olefredrik</a>
+				</section>
+			</div>
+		</div>
+
 	</header>
 
 	<section class="container">
