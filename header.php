@@ -44,7 +44,7 @@
 		<nav id="site-navigation" class="main-navigation top-bar" role="navigation">
 			<div class="top-bar-left">
 				<ul class="menu">
-					<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></li>
+					<li class="home"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><i class="fa fa-bolt"></i></a></li>
 				</ul>
 			</div>
 
@@ -81,10 +81,30 @@
 				</ul>
 			</div>
 
-			<div class="top-bar-social-mobile hide-for-large">
-				<a href="#">Test</a>
+			<div class="top-bar-social-tablet hide-for-large">
+				<ul class="menu">
+					<li class="menu-item-social">
+						<a href="http://www.facebook.com/japshirts">
+							<i class="fa fa-facebook-official"></i>
+						</a>
+					</li>
+
+					<li class="menu-item-social">
+						<a href="http://www.instagram.com/japshirt">
+							<i class="fa fa-instagram"></i>
+						</a>
+					</li>
+
+					<li class="menu-item-social">
+						<a href="#">
+							<i class="fa fa-pinterest-square"></i>
+						</a>
+					</li>
+				</ul>
 			</div>
 		</nav>
+
+		<hr class="bottom-line white">
 
 	</header>
 

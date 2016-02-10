@@ -2,3 +2,12 @@
   border-style: dashed;
   margin: 2rem 0;
 }
+
+hr.bottom-line.white {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  max-width: 100%;
+  margin: 0 0 5px 0;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
