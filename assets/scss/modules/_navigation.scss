@@ -1,4 +1,6 @@
-/* Navigation breakpoints */
+/* Navigation breakpoints
+ * ----------------------
+ */
 
 .main-navigation {
   @include show-for(medium);
@@ -8,7 +10,22 @@
   @include hide-for(medium);
 }
 
-/* Mobile menu */
+/* Fix issues for specific screen size */
+@media only screen and (min-width: 1024px) and (max-width: 1146px) {
+  .main-navigation {
+    width: 580px;
+  }
+
+  .top-bar-social {
+    float: none;
+    margin-top: 24px;
+  }
+}
+
+/* Mobile menu
+ * ----------------------
+ */
+
 .off-canvas {
   background: #121212;
   ul#menu-my-menu-mobile {
@@ -49,16 +66,16 @@
   }
 }
 
+/* Tablet and desktop menu
+ * ----------------------
+ */
 
-/* Tablet and desktop menu */
 .top-bar, .top-bar ul {
   background-color: transparent;
 }
 .top-bar {
   display: table;
   margin: 0 auto;
-
-  .top-bar-left {  }
 
   .top-bar-right {
     float: left;
