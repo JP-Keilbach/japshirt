@@ -5,9 +5,80 @@ Template Name: Front
 get_header(); ?>
 
 <section clas="about">
+	<div class="color-segment">
+		<div class="segment red"></div>
+	</div>
+
 	<div class="row">
-		<h1>Hello World</h1>
-		<p>Parmesan when the cheese comes out everybody's happy danish fontina. Queso taleggio cheeseburger roquefort cow taleggio blue castello cheddar. Say cheese who moved my cheese blue castello cream cheese say cheese port-salut cheese slices fromage frais. Lancashire cheddar ricotta pepper jack mascarpone cheese and biscuits pepper jack cheese and wine. Cheese on toast swiss.</p>
+		<div class="small-12 large-12 columns">
+			<h1>
+				<img src="../images/headline-about-part1.png" alt="Handcrafted">
+				<img src="../images/headline-about-part2.png" alt="Vector Shirts">
+			</h1>
+			<span class="">for</span>
+			<span class="">Awesome People</span>
+			<span>Like You <i class="fa fa-heart"></i></span>
+			<p>I will share my passion for producing wearable art that tells a story, strengthens humanity and inspires life through creativity & design.</p>
+		</div>
+	</div>
+</section>
+
+<section class="instagram">
+	<div class="row">
+		<div class="small-12 large-12 columns">
+			<div class="btn-divider">
+				<div class="button">
+					<a href=""><i class="fa fa-instagram"></i>/japshirt</a>
+				</div>
+			</div>
+			<div class="instagram-plugin">Instagram Plugin goes here.</div>
+		</div>
+	</div>
+</section>
+
+<section class="categories">
+	<div class="row">
+		<div class="small-12 large-12 columns">
+			<h2>Kategorien</h2>
+			<div class="banner-stroke"></div>
+			<p class="headline-feature">Port-salut cauliflower cheese cheese slices. Swiss gouda stinking bishop cheesecake blue castello cottage cheese camembert de normandie babybel. </p>
+		</div>
+
+		<div class="small-4 large-4 columns">
+			<div class="shield kids">
+				<span class="shield-headline">Minions</span>
+			</div>
+			<p>Manchego smelly cheese stinking bishop. Everyone loves dolcelatte hard cheese</p>
+		</div>
+		<div class="small-4 large-4 columns">
+			<div class="shield logo">
+				<span class="shield-headline">Symbols</span>
+			</div>
+			<p>Manchego smelly cheese stinking bishop. Everyone loves dolcelatte hard cheese</p>
+		</div>
+		<div class="small-4 large-4 columns">
+			<div class="shield geek">
+				<span class="shield-headline">Portrait</span>
+			</div>
+			<p>Manchego smelly cheese stinking bishop. Everyone loves dolcelatte hard cheese</p>
+		</div>
+	</div>
+</section>
+
+<section class="spreadshop">
+	<div class="row">
+		<div class="small-12 large-12 columns">
+			<h2>The Shop</h2>
+			<div class="banner-stroke"></div>
+			<p class="headline-feature">Port-salut cauliflower cheese cheese slices. Swiss gouda stinking bishop cheesecake blue castello cottage cheese camembert de normandie babybel. </p>
+
+			<?php
+				$id=19;
+				$post = get_post($id);
+				$content = apply_filters('the_content', $post->post_content);
+				echo $content
+			?>
+		</div>
 	</div>
 </section>
 

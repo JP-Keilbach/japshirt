@@ -1,13 +1,29 @@
 .dotted {
-  border-style: dashed;
-  margin: 2rem 0;
+	width: 100%;
+	border-style: dashed;
+	margin: 5px;
 }
 
 hr.bottom-line.white {
-  position: absolute;
-  bottom: 0;
-  width: 100%;
-  max-width: 100%;
-  margin: 0 0 5px 0;
-  border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+	position: absolute;
+	bottom: 0;
+	width: 100%;
+	max-width: 100%;
+	margin: 0 0 5px 0;
+	border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+}
+
+.color-segment {
+	height: 5px;
+	margin-bottom: 96px;
+	border-bottom: 1px dashed #bababa;
+
+	.segment {
+		display: table;
+		background: $primary-color;
+		height: 5px;
+		width: 280px;
+		margin: 0 auto;
+
+	}
 }
