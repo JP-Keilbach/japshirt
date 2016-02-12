@@ -11,8 +11,12 @@
 
 ?>
 
-		</section>
+		</section> <!-- END CONTAINER -->
 		<div id="footer-container">
+			<div class="color-segment top">
+				<div class="segment red"></div>
+			</div>
+
 			<footer id="footer">
 				<?php do_action( 'foundationpress_before_footer' ); ?>
 				<?php dynamic_sidebar( 'footer-widgets' ); ?>

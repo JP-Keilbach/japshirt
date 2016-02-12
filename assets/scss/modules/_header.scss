@@ -2,9 +2,9 @@
 	background-color: $primary-color;
 
 	@include breakpoint(small) {
-		background: url('../images/demo/hero-bg-foundation-6-small.svg') bottom center;
+		background: url('../images/demo/hero-bg-foundation-6-small.svg') center center;
 		background-size: cover;
-		background-position: bottom;
+		background-position: center;
 		padding: rem-calc(24px) 0 rem-calc(24px) 0;
 		margin: 0;
 		height: 500px;
@@ -13,9 +13,9 @@
 	}
 
 	@include breakpoint(medium) {
-		background: url('../images/header-bg.jpg') bottom center;
+		background: url('../images/header-bg.jpg') center center;
 		background-size: cover;
-		background-position: top;
+		background-position: center;
 		height: rem-calc(552);
 		margin: 0;
 	}
