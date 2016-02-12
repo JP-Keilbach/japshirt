@@ -83,13 +83,13 @@ get_header(); ?>
 			<p class="headline-feature">Port-salut cauliflower cheese cheese slices. Swiss gouda stinking bishop cheesecake blue castello cottage cheese camembert de normandie babybel.</p>
 
 			<?php
-				$typoId=31;
+				$typoId=19;
 				$post = get_post($typoId);
 				$typoContent = apply_filters('the_content', $post->post_content);
 			?>
 
 			<?php
-				$logoId=29;
+				$logoId=28;
 				$post = get_post($logoId);
 				$logoContent = apply_filters('the_content', $post->post_content);
 			?>
