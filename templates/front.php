@@ -21,23 +21,30 @@ get_header(); ?>
 			<p class="feature">I will share my passion for producing wearable art that tells a story,<br> strengthens humanity and inspires life through creativity & design.</p>
 		</div> <!-- END COLUMNS -->
 	</div> <!-- END ROW -->
-
-	<div class="color-segment bottom">
-		<div class="segment red"></div>
-	</div>
 </section> <!-- END SECTION -->
 
 <section class="instagram">
 	<div class="row">
 		<div class="small-12 large-12 columns">
 			<div class="btn-divider">
-				<div class="button">
-					<a href=""><i class="fa fa-instagram"></i>/japshirt</a>
+				<span class="large-4 columns dash left"></span>
+				<div class="large-4 columns button-container">
+					<button type="button" class="button red">
+						<a href="">
+							<i class="fa fa-instagram"></i>
+							<span data-hover="/jabshirt">instagram</span>
+						</a>
+					</button>
 				</div>
+				<span class="large-4 columns dash right"></span>
 			</div>
-			<div class="instagram-plugin">Instagram Plugin goes here.</div>
+			<div class="instagram-plugin-container"><?php echo do_shortcode('[enjoyinstagram_mb]'); ?></div>
 		</div> <!-- END COLUMNS -->
 	</div> <!-- END ROW -->
+
+	<div class="color-segment bottom">
+		<div class="segment red"></div>
+	</div>
 </section> <!-- END SECTION -->
 
 <section class="categories">

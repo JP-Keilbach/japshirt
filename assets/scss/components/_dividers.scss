@@ -15,8 +15,11 @@ hr.bottom-line.white {
 
 .color-segment {
 	height: 5px;
-	margin-bottom: 96px;
-	border-bottom: 1px dashed #bababa;
+	margin-bottom: 107px;
+
+	&.top { border-bottom: 1px dashed #bababa; }
+
+	&.bottom { border-top: 1px dashed #bababa; }
 
 	.segment {
 		display: table;
@@ -24,6 +27,27 @@ hr.bottom-line.white {
 		height: 5px;
 		width: 280px;
 		margin: 0 auto;
-
 	}
 }
+
+.btn-divider {
+	overflow: hidden;
+	margin-bottom: 56px;
+
+	button {
+		display: table;
+		margin: 0 auto;
+	}
+
+	.dash {
+		display: block;
+		height: 1px;
+		border-bottom: 1px solid #bababa;
+		margin: 27px 0;
+	}
+
+	.dash.left { float: left;}
+	.dash.right { float: right;}
+}
+
+

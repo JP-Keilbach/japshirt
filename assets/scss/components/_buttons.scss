@@ -1,8 +1,75 @@
 .sites-button {
-  background: #FF6908;
-  font-size: 1.25rem;
-  font-weight: bold;
-  box-shadow: 0 -2px 0 rgba(0,0,0,0.2) inset;
-  border-radius: 3px;
-  border: none;
+	background: #FF6908;
+	font-size: 1.25rem;
+	font-weight: bold;
+	box-shadow: 0 -2px 0 rgba(0, 0, 0, 0.2) inset;
+	border-radius: 3px;
+	border: none;
+}
+
+button.button {
+	background-color: transparent;
+	font-family: $header-font-family;
+	font-size: 20px;
+	line-height: 52px;
+	border: 2px solid #0a0a0a;
+	padding: 0px;
+	margin: 0px;
+
+	a {
+		display: block;
+		overflow: hidden;
+		padding: 0 20px 0 0;
+		height: 52px;
+	}
+
+	a span {
+		position: relative;
+		display: inline-block;
+		vertical-align: baseline;
+		color: #0a0a0a;
+		letter-spacing: 2px;
+		text-transform: lowercase;
+		-webkit-transition: -webkit-transform 0.3s;
+		-moz-transition: -moz-transform 0.3s;
+		transition: transform 0.3s;
+	}
+
+	a span::before {
+		position: absolute;
+		top: 100%;
+		content: attr(data-hover);
+		-webkit-transform: translate3d(0,0,0);
+		-moz-transform: translate3d(0,0,0);
+		transform: translate3d(0,0,0);
+	}
+
+	a:hover span,
+	a:focus span {
+		background-color: $primary-color;
+		color: #FFFFFF;
+
+		-webkit-transform: translateY(-100%);
+		-moz-transform: translateY(-100%);
+		transform: translateY(-100%);
+	}
+
+	i {
+		background-color: $primary-color;
+		display: inline-block;
+		float: left;
+		width: 56px;
+		color: #FFFFFF;
+		line-height: 52px;
+		margin-right: 28px;
+	}
+}
+
+.button:hover {
+	background-color: $primary-color;
+}
+
+.button:hover i {
+	background-color: #FFFFFF;
+	color: #0a0a0a;
 }
