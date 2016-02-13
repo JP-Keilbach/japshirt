@@ -7,6 +7,7 @@ get_header(); ?>
 <section class="about">
 	<div class="color-segment top">
 		<div class="segment red"></div>
+		<hr class="solid" />
 	</div>
 
 	<div class="row">
@@ -18,7 +19,7 @@ get_header(); ?>
 				<span class="awesome-people">Awesome People</span>
 				<span class="like-you">Like You <i class="fa fa-heart"></i></span>
 			</div>
-			<p class="feature">I will share my passion for producing wearable art that tells a story,<br> strengthens humanity and inspires life through creativity & design.</p>
+			<p class="headline-feature">I will share my passion for producing wearable art that tells a story,<br> strengthens humanity and inspires life through creativity & design.</p>
 		</div> <!-- END COLUMNS -->
 	</div> <!-- END ROW -->
 </section> <!-- END SECTION -->
@@ -43,6 +44,7 @@ get_header(); ?>
 	</div> <!-- END ROW -->
 
 	<div class="color-segment bottom">
+		<hr class="solid" />
 		<div class="segment red"></div>
 	</div>
 </section> <!-- END SECTION -->
@@ -55,32 +57,38 @@ get_header(); ?>
 			<p class="headline-feature">Cut the cheese ricotta cheddar. Everyone loves bavarian bergkase st. agur blue cheese cheeseburger fondue melted cheese blue castello cheeseburger. Manchego jarlsberg mascarpone mozzarella lancashire port-salut cow cow. Lancashire.</p>
 		</div> <!-- END COLUMNS -->
 
-		<div class="small-4 large-4 columns">
-			<div class="shield kids">
-				<span class="shield-headline">Minions</span>
-			</div>
-			<p>Manchego smelly cheese stinking bishop. Everyone loves dolcelatte hard cheese</p>
-		</div><!-- END COLUMNS -->
+		<div class="category-feature">
 
-		<div class="small-4 large-4 columns">
-			<div class="shield logo">
-				<span class="shield-headline">Symbols</span>
-			</div>
-			<p>Manchego smelly cheese stinking bishop. Everyone loves dolcelatte hard cheese</p>
-		</div><!-- END COLUMNS -->
+			<div class="small-4 large-4 columns">
+				<div class="shield kids">
+					<span class="shield-headline">Minions</span>
+				</div>
+				<p>Manchego smelly cheese stinking bishop. Everyone loves dolcelatte hard cheese</p>
+			</div><!-- END COLUMNS -->
 
-		<div class="small-4 large-4 columns">
-			<div class="shield geek">
-				<span class="shield-headline">Portrait</span>
-			</div>
-			<p>Manchego smelly cheese stinking bishop. Everyone loves dolcelatte hard cheese</p>
-		</div><!-- END COLUMNS -->
+			<div class="small-4 large-4 columns">
+				<div class="shield logo">
+					<span class="shield-headline">Symbols</span>
+				</div>
+				<p>Manchego smelly cheese stinking bishop. Everyone loves dolcelatte hard cheese</p>
+			</div><!-- END COLUMNS -->
+
+			<div class="small-4 large-4 columns">
+				<div class="shield geek">
+					<span class="shield-headline">Portrait</span>
+				</div>
+				<p>Manchego smelly cheese stinking bishop. Everyone loves dolcelatte hard cheese</p>
+			</div><!-- END COLUMNS -->
+
+		</div>
+
 	</div> <!-- END ROW -->
 </section> <!-- END SECTION -->
 
 <section class="spreadshop">
 	<div class="color-segment top">
 		<div class="segment red"></div>
+		<hr class="solid" />
 	</div>
 
 	<div class="row">
@@ -88,6 +96,12 @@ get_header(); ?>
 			<h2>The Shop</h2>
 			<div class="banner-stroke"></div>
 			<p class="headline-feature">Port-salut cauliflower cheese cheese slices. Swiss gouda stinking bishop cheesecake blue castello cottage cheese camembert de normandie babybel.</p>
+
+			<?php
+			$allId=32;
+			$post = get_post($allId);
+			$allContent = apply_filters('the_content', $post->post_content);
+			?>
 
 			<?php
 				$typoId=19;
@@ -103,16 +117,18 @@ get_header(); ?>
 
 			<?php echo do_shortcode("
 				[tr_tabs]
-				[ir_item id=\"1\" title=\"Tab title\"]' . $typoContent . '[/ir_item]
-				[ir_item id=\"2\" title=\"Tab title\"]' . $logoContent . '[/ir_item]
-				[ir_item id=\"3\" title=\"Tab title\"]' . $text . '[/ir_item]
+				[ir_item id=\"1\" title=\"All\"]' . $allContent . '[/ir_item]
+				[ir_item id=\"2\" title=\"Kids\"]' . $typoContent . '[/ir_item]
+				[ir_item id=\"3\" title=\"Logo\"]' . $logoContent . '[/ir_item]
+				[ir_item id=\"4\" title=\"Geek\"]' . $text . '[/ir_item]
 				[/tr_tabs]
 			");?>
 
 		</div> <!-- END COLUMNS -->
 	</div> <!-- END ROW -->
 
-	<div class="color-segment top">
+	<div class="color-segment bottom">
+		<hr class="solid" />
 		<div class="segment red"></div>
 	</div>
 </section> <!-- END SECTION -->

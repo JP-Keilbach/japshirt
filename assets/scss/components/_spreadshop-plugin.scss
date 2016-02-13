@@ -1,0 +1,18 @@
+// Spreadshop Menu
+.spreadplugin-menu {
+	padding: 0;
+
+	.checkout {
+		a.button {
+			margin-bottom: 0;
+		}
+	}
+}
+.spreadplugin-menu.fixed {
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 56px !important;
+	border: none;
+	box-shadow: none;
+}

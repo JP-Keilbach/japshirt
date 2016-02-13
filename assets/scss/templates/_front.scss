@@ -1,3 +1,12 @@
+body {
+	line-height: 28px;
+}
+
+p {
+	line-height: 28px;
+	margin-bottom: 28px;
+}
+
 // Page header
 .off-canvas-content {
 	background-image: url("../images/baseline-grid.png");
@@ -66,24 +75,62 @@
 			}
 		}
 	}
-
-	.feature {
-		// @include grid-column(6);
-		float: none;
-		margin: 0 auto;
-
-		font-size: 18px;
-		text-align: center;
-		margin-bottom: 28px;
-	}
 }
 
 // Instagram
 .instagram-plugin-container {
-	margin-bottom: 112px;
+	//margin-bottom: 112px;
 }
 
 // Headings
+.categories h2,
+.spreadshop h2,
+   .contact h2 {
+	font-size: 70px;
+	line-height: 84px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+.headline-feature {
+	@include grid-column(6);
+
+	float: none !important;
+	margin: 0 auto;
+
+	font-size: 18px;
+	text-align: center;
+	margin-bottom: 28px;
+}
+
+
+// Categories
+.categories {
+	padding-top: 112px;
+
+	.banner-stroke {
+		display: table;
+		background: url('../images/h2-banner-categories.svg') center top no-repeat;
+		height: 56px;
+		width: 280px;
+		margin: 0 auto;
+	}
+}
+
+// Spreadshop
+.spreadshop {
+	padding-top: 112px;
+
+	.banner-stroke {
+		display: table;
+		background: url('../images/h2-banner-spreadshop.svg') center top no-repeat;
+		height: 56px;
+		width: 280px;
+		margin: 0 auto;
+	}
+}
+
 
 // Section divider
 .section-divider {

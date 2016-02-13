@@ -14,12 +14,14 @@ hr.bottom-line.white {
 }
 
 .color-segment {
-	height: 5px;
-	margin-bottom: 107px;
 
-	&.top { border-bottom: 1px dashed #bababa; }
+	&.top {
+		margin-bottom: 106px;
+	}
 
-	&.bottom { border-top: 1px dashed #bababa; }
+	&.bottom {
+		margin-top: 106px;
+	}
 
 	.segment {
 		display: table;
@@ -27,6 +29,15 @@ hr.bottom-line.white {
 		height: 5px;
 		width: 280px;
 		margin: 0 auto;
+	}
+
+	.solid {
+		height: 0px;
+		border-bottom: 1px dashed #bababa;
+		max-width: 100%;
+		margin: 0;
+		position: relative;
+
 	}
 }
 
