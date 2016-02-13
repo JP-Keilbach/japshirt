@@ -34,9 +34,13 @@ hr.bottom-line.white {
 	overflow: hidden;
 	margin-bottom: 56px;
 
-	button {
-		display: table;
-		margin: 0 auto;
+	.button-container {
+		@include grid-column(4);
+
+		button {
+			display: table;
+			margin: 0 auto;
+		}
 	}
 
 	.dash {
@@ -46,8 +50,14 @@ hr.bottom-line.white {
 		margin: 27px 0;
 	}
 
-	.dash.left { float: left;}
-	.dash.right { float: right;}
+	.dash.left {
+		@include grid-column(4);
+		float: left;
+	}
+	.dash.right {
+		@include grid-column(4);
+		float: right;
+	}
 }
 
 

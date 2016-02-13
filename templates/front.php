@@ -27,8 +27,8 @@ get_header(); ?>
 	<div class="row">
 		<div class="small-12 large-12 columns">
 			<div class="btn-divider">
-				<span class="large-4 columns dash left"></span>
-				<div class="large-4 columns button-container">
+				<span class="dash left"></span>
+				<div class="button-container">
 					<button type="button" class="button red">
 						<a href="">
 							<i class="fa fa-instagram"></i>
@@ -36,7 +36,7 @@ get_header(); ?>
 						</a>
 					</button>
 				</div>
-				<span class="large-4 columns dash right"></span>
+				<span class="dash right"></span>
 			</div>
 			<div class="instagram-plugin-container"><?php echo do_shortcode('[enjoyinstagram_mb]'); ?></div>
 		</div> <!-- END COLUMNS -->
