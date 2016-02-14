@@ -1,18 +1,90 @@
 // Spreadshop Menu
 .spreadplugin-menu {
+	background: transparent;
+	width: 100%;
+	height: 56px !important;
 	padding: 0;
+	border: none;
 
-	.checkout {
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	     -o-box-shadow: none;
+	        box-shadow: none;
+
+	#checkout {
+		display: table;
+		float: none;
+		margin: 0 auto;
+		border: 2px solid #1E1E1E;
+
+		&:hover span {
+			background-color: $primary-color;
+			color: #FFFFFF;
+		}
+
+		&:hover span::after {
+
+		}
+
+		&:hover a.button {
+			background: transparent;
+			text-decoration: none;
+		}
+
+		&:hover a.button::after {
+			color: #1E1E1E;
+		}
+
+		span {
+			display: inline-block;
+			padding: 0 20px;
+			font-family: $header-font-family;
+			font-size: rem-calc(20px);
+			text-transform: lowercase;
+			letter-spacing: 2px;
+			line-height: 52px;
+
+			&::after {
+				content: 'Artikel im Warenkorb';
+				padding-left: 20px;
+				line-height: inherit;
+
+			}
+		}
+
 		a.button {
-			margin-bottom: 0;
+			float: left;
+			height: 52px;
+			width: 56px;
+			padding: 0;
+			margin: 0;
+			line-height: 52px;
+			border: none;
+
+			&:after {
+				display: block;
+				padding: 0;
+				color: #FFFFFF;
+				font-size: rem-calc(20px);
+			}
+
+			//&:hover {
+			//	background: transparent;
+			//	text-decoration: none;
+			//}
+			//
+			//&:hover::after {
+			//	color: #1E1E1E;
+			//}
 		}
 	}
 }
 .spreadplugin-menu.fixed {
-	position: fixed;
 	top: 0;
-	width: 100%;
-	height: 56px !important;
 	border: none;
-	box-shadow: none;
+
+	-webkit-box-shadow: none;
+	   -moz-box-shadow: none;
+	     -o-box-shadow: none;
+	        box-shadow: none;
 }

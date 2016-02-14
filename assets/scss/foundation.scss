@@ -8,7 +8,8 @@
 */
 
 //  Settings
-@import "global/settings"; // Foundation settings file.
+@import "global/settings"; // Foundation settings file
+@import "global/base"; // Overall Theme settings file
 
 // Foundation mixins & browser resets
 @import '../components/foundation-sites/scss/foundation';
