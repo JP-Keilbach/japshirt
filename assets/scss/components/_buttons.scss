@@ -65,6 +65,10 @@ button.button {
 	}
 }
 
+.button:focus {
+	background-color: $primary-color;
+}
+
 .button:hover {
 	background-color: $primary-color;
 }
@@ -73,3 +77,5 @@ button.button {
 	background-color: #FFFFFF;
 	color: #0a0a0a;
 }
+
+

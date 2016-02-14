@@ -6,41 +6,40 @@
 }
 
 .pws_tabs_container ul.pws_tabs_controll li a {
+	padding: 0 28px;
+	margin: 0;
 	font-family: $header-font-family;
 	font-size: 20px;
 	letter-spacing: 2px;
-	line-height: 54px;
+	line-height: 52px;
 	text-transform: lowercase;
-	border: 1px solid #1E1E1E;
-	padding: 0 28px;
-	margin: 0;
+	border: 2px solid #1E1E1E;
 }
 
-.tr-easy-tabs-wrapper div.pws_tabs_container ul.pws_tabs_controll li a {
-	background-color: $primary-color;
-}
-
-.pws_tabs_container ul.pws_tabs_controll li a:before {
-	height: 0px;
-}
-
-#tr-easy-tabs-wrapper div.pws_tabs_container ul.pws_tabs_controll li a.pws_tab_active {
+.pws_tabs_container ul.pws_tabs_controll li a {
 	background-color: transparent !important;
-	border-color: #1E1E1E !important;
+	color: #1E1E1E !important;
+
+	&:before {
+		height: 0;
+	}
 }
 
-#tr-easy-tabs-wrapper div.pws_tabs_container ul.pws_tabs_controll li a:before, #tr-easy-tabs-wrapper div.pws_tabs_container ul.pws_tabs_controll li a {
+.pws_tabs_container ul.pws_tabs_controll li a.pws_tab_active {
 	background-color: $primary-color !important;
+	color: #FFFFFF !important;
+	border: 2px solid #1E1E1E !important;
 }
 
 // Tab Content
 .pws_tabs_list {
-	display: block;
-	border: none;
 	background-color: transparent;
+	display: block;
 	height: auto;
 	padding: 0 0 28px 0;
 	margin-bottom: 28px;
+	border: none;
+
 
 	-webkit-box-sizing: border-box;
 	   -moz-box-sizing: border-box;
@@ -51,15 +50,15 @@
 
 	-webkit-transition: all .3s ease-in-out;
 	   -moz-transition: all .3s ease-in-out;
-	     -o-transition: all .3s ease-in-out;
 	    -ms-transition: all .3s ease-in-out;
+	     -o-transition: all .3s ease-in-out;
 	        transition: all .3s ease-in-out;
 
 
 	-webkit-transition-delay: .3s;
 	   -moz-transition-delay: .3s;
-	     -o-transition-delay: .3s;
 	    -ms-transition-delay: .3s;
+	     -o-transition-delay: .3s;
 	        transition-delay: .3s;
 
 	-webkit-transform-style: preserve-3d;
@@ -71,24 +70,27 @@
 	opacity: 1;
 	filter: alpha(opacity=100);
 	-ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)";
-	transform: scale(1);
+
 	-webkit-transform: scale(1);
-	-moz-transform: scale(1);
-	-o-transform: scale(1);
-	-ms-transform: scale(1);
+	   -moz-transform: scale(1);
+	    -ms-transform: scale(1);
+	     -o-transform: scale(1);
+	        transform: scale(1);
+
 	-webkit-transition-delay: .3s;
-	-moz-transition-delay: .3s;
-	-o-transition-delay: .3s;
-	-ms-transition-delay: .3s;
-	transition-delay: .3s;
+	   -moz-transition-delay: .3s;
+	    -ms-transition-delay: .3s;
+	     -o-transition-delay: .3s;
+	        transition-delay: .3s;
 }
 
 .pws_tab_single {
 	position: absolute;
 	top: 0px;
-	transition: all .3s ease-in-out;
+
 	-webkit-transition: all .3s ease-in-out;
-	-moz-transition: all .3s ease-in-out;
-	-o-transition: all .3s ease-in-out;
-	-ms-transition: all .3s ease-in-out;
+	   -moz-transition: all .3s ease-in-out;
+	    -ms-transition: all .3s ease-in-out;
+	     -o-transition: all .3s ease-in-out;
+	        transition: all .3s ease-in-out;
 }
