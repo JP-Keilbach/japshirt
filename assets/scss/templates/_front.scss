@@ -12,8 +12,46 @@ p {
 	background-image: url("../images/baseline-grid.png");
 }
 
+// Section header
+.about,
+.categories,
+.spreadshop,
+.contact {
+	padding-top: 112px;
+
+	.banner-stroke {
+		display: table;
+		height: 56px;
+		width: 280px;
+		margin: 0 auto;
+	}
+}
+
+// Headings
+.categories h2,
+.spreadshop h2,
+.contact h2 {
+	font-size: 70px;
+	line-height: 84px;
+	text-transform: uppercase;
+	text-align: center;
+	margin-bottom: 0px;
+}
+
+// Paragraphs
+p.headline-feature {
+	@include grid-column(6);
+
+	float: none !important;
+	margin: 0 auto 28px auto;
+	font-size: 18px;
+	text-align: center;
+}
+
 // About
 .about {
+	padding-top: 0;
+
 	h1 {
 		font-size: rem-calc(100px);
 		line-height: 112px;
@@ -78,59 +116,28 @@ p {
 }
 
 // Instagram
-.instagram-plugin-container {
-	//margin-bottom: 112px;
-}
-
-// Headings
-.categories h2,
-.spreadshop h2,
-   .contact h2 {
-	font-size: 70px;
-	line-height: 84px;
-	text-transform: uppercase;
-	text-align: center;
-	margin-bottom: 0px;
-}
-
-.headline-feature {
-	@include grid-column(6);
-
-	float: none !important;
-	margin: 0 auto;
-
-	font-size: 18px;
-	text-align: center;
-	margin-bottom: 28px;
-}
-
+.instagram-plugin-container { }
 
 // Categories
 .categories {
-	padding-top: 112px;
-
 	.banner-stroke {
-		display: table;
 		background: url('../images/h2-banner-categories.svg') center top no-repeat;
-		height: 56px;
-		width: 280px;
-		margin: 0 auto;
 	}
 }
 
 // Spreadshop
 .spreadshop {
-	padding-top: 112px;
-
 	.banner-stroke {
-		display: table;
 		background: url('../images/h2-banner-spreadshop.svg') center top no-repeat;
-		height: 56px;
-		width: 280px;
-		margin: 0 auto;
 	}
 }
 
+// Contact
+.contact {
+	.banner-stroke {
+		background: url('../images/h2-banner-spreadshop.svg') center top no-repeat;
+	}
+}
 
 // Section divider
 .section-divider {

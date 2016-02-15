@@ -101,28 +101,8 @@ get_header(); ?>
 			$allId=32;
 			$post = get_post($allId);
 			$allContent = apply_filters('the_content', $post->post_content);
+			echo $allContent;
 			?>
-
-			<?php
-				$typoId=19;
-				$post = get_post($typoId);
-				$typoContent = apply_filters('the_content', $post->post_content);
-			?>
-
-			<?php
-				$logoId=28;
-				$post = get_post($logoId);
-				$logoContent = apply_filters('the_content', $post->post_content);
-			?>
-
-			<?php echo do_shortcode("
-				[tr_tabs]
-				[ir_item id=\"1\" title=\"All\"]' . $allContent . '[/ir_item]
-				[ir_item id=\"2\" title=\"Kids\"]' . $typoContent . '[/ir_item]
-				[ir_item id=\"3\" title=\"Logo\"]' . $logoContent . '[/ir_item]
-				[ir_item id=\"4\" title=\"Geek\"]' . $text . '[/ir_item]
-				[/tr_tabs]
-			");?>
 
 		</div> <!-- END COLUMNS -->
 	</div> <!-- END ROW -->
@@ -139,6 +119,7 @@ get_header(); ?>
 			<h2>Kontakt</h2>
 			<div class="banner-stroke"></div>
 			<p class="headline-feature">Port-salut cauliflower cheese cheese slices. Swiss gouda stinking bishop cheesecake blue castello cottage cheese camembert de normandie babybel.</p>
+
 			<?php echo do_shortcode('[contact-form-7 id="41" title="Kontaktformular 1"]'); ?>
 		</div> <!-- END COLUMNS -->
 	</div> <!-- END ROW -->
