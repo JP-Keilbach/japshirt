@@ -115,12 +115,13 @@ get_header(); ?>
 
 <section class="contact">
 	<div class="row">
-		<div class="small-12 large-12">
+		<div class="small-12 large-12 columns">
 			<h2>Kontakt</h2>
 			<div class="banner-stroke"></div>
 			<p class="headline-feature">Port-salut cauliflower cheese cheese slices. Swiss gouda stinking bishop cheesecake blue castello cottage cheese camembert de normandie babybel.</p>
-
-			<?php echo do_shortcode('[contact-form-7 id="41" title="Kontaktformular 1"]'); ?>
+			<div class="large-6 large-centered columns end">
+				<?php echo do_shortcode('[contact-form-7 id="41" title="Kontaktformular 1"]'); ?>
+			</div>
 		</div> <!-- END COLUMNS -->
 	</div> <!-- END ROW -->
 </section> <!-- END SECTION -->

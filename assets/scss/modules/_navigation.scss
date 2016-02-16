@@ -69,6 +69,11 @@
 /* Tablet and desktop menu
  * -----------------------
  */
+.is-dropdown-submenu-parent.is-down-arrow > a::after {
+  top: 18px;
+  margin-right: 4px;
+  border-color: #FFFFFF transparent transparent;
+}
 
 .top-bar, .top-bar ul {
   background-color: transparent;
