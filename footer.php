@@ -12,9 +12,11 @@
 ?>
 
 		</section> <!-- END CONTAINER -->
+
 		<div id="footer-container">
 			<div class="color-segment top">
 				<div class="segment red"></div>
+				<hr class="solid" />
 			</div>
 
 			<footer id="footer">

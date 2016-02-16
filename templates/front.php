@@ -126,8 +126,4 @@ get_header(); ?>
 	</div> <!-- END ROW -->
 </section> <!-- END SECTION -->
 
-<div class="section-divider">
-	<hr />
-</div>
-
 <?php get_footer(); ?>
