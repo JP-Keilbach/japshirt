@@ -52,11 +52,20 @@
 
 .title-bar {
 	height: 48px;
+	color: #1E1E1E;
 	line-height: 44px;
 	padding: 0 0 0 15px;
 	background: transparent;
-	border: 1px solid #fff;
+	border: 1px solid rgba(30, 30, 30, 0.5);
 	margin: 0 15px;
+
+	.menu-icon::after {
+		background: #1E1E1E;
+
+		-webkit-box-shadow: 0 7px 0 #1e1e1e, 0 14px 0 #1E1E1E;
+		   -moz-box-shadow: 0 7px 0 #1e1e1e, 0 14px 0 #1E1E1E;
+		        box-shadow: 0 7px 0 #1e1e1e, 0 14px 0 #1E1E1E;
+	}
 }
 
 .title-bar-title {
@@ -65,7 +74,7 @@
 		font-size: rem-calc(20px);
 		text-transform: lowercase;
 		letter-spacing: 2px;
-		color: #FFFFFF;
+		color: #1E1E1E;
 	}
 }
 /* ----------------------- *

@@ -2,7 +2,7 @@
 	background-color: $primary-color;
 
 	@include breakpoint(small) {
-		background: url('../images/demo/hero-bg-foundation-6-small.svg') center center;
+		background: url('../images/header-bg-tuntra.jpg') center center;
 		background-size: cover;
 		background-position: center;
 		padding: rem-calc(24px) 0 rem-calc(24px) 0;
@@ -18,6 +18,14 @@
 		background-position: center;
 		height: rem-calc(560);
 		margin: 0;
+	}
+
+	.header-intro {
+		img.logo {
+			display: table;
+			margin: 84px auto 0 auto;
+			height: 296px;
+		}
 	}
 
 }
