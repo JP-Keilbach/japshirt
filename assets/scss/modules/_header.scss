@@ -13,7 +13,7 @@
 	}
 
 	@include breakpoint(medium) {
-		background: url('../images/header-bg.jpg') center center;
+		background: url('../images/header-bg-tuntra.jpg') center bottom;
 		background-size: cover;
 		background-position: center;
 		height: rem-calc(560);

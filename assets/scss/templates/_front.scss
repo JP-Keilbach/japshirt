@@ -9,7 +9,7 @@ p {
 
 // Page header
 .off-canvas-content {
-	background-image: url("../images/baseline-grid.png");
+	// background-image: url("../images/baseline-grid.png");
 }
 
 // Section header
@@ -50,6 +50,7 @@ p.headline-feature {
 
 // About
 .about {
+	background: url('../images/texturetastic_gray.png') top left;
 	padding-top: 0;
 
 	h1 {
@@ -116,10 +117,15 @@ p.headline-feature {
 }
 
 // Instagram
-.instagram-plugin-container { }
+.instagram {
+	background: url('../images/texturetastic_gray.png') top left;
+}
 
 // Categories
 .categories {
+	background: url('../images/header-bg-tuntra.jpg') center center;
+	background-size: cover;
+	background-position: center;
 	.banner-stroke {
 		background: url('../images/h2-banner-categories.svg') center top no-repeat;
 	}

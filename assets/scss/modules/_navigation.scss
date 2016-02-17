@@ -13,12 +13,11 @@
 /* Fix issues for specific screen size */
 @media only screen and (min-width: 1024px) and (max-width: 1146px) {
   .main-navigation {
-    width: 580px;
-  }
+    width: 1024px;
 
-  .top-bar-social {
-    float: none;
-    margin-top: 24px;
+    .top-bar-social {
+      margin-top: 0;
+    }
   }
 }
 
@@ -185,8 +184,7 @@
     border-bottom: 1px solid rgba(255, 255, 255, 0.5);
 
     &:hover:not(.button) {
-      background: rgb(244, 99, 83);
-      background: rgba(244, 99, 83, 0.5);
+      background: rgba(255, 255, 255, 0.3);
     }
   }
 

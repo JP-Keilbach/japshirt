@@ -7,3 +7,9 @@
 .owl-theme .owl-controls .owl-page span {
 	margin: 8px 7px;
 }
+
+.owl-theme .owl-controls .owl-page.active span,
+.owl-theme .owl-controls.clickable .owl-page:hover span {
+	opacity: 1;
+	background-color: $primary-color;
+}
