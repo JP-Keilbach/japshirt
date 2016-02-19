@@ -43,6 +43,11 @@ p {
 	margin-bottom: 0px;
 }
 
+.categories h2,
+.contact h2 {
+	color: #FFFFFF;
+}
+
 // Paragraphs
 p.headline-feature {
 	@include grid-column(6);
@@ -53,9 +58,15 @@ p.headline-feature {
 	text-align: center;
 }
 
+.categories p.headline-feature,
+.contact p {
+	font-family: "klinic_slablight";
+	color: #FFFFFF;
+}
+
 // About
 .about {
-	// background: url('../images/texturetastic_gray.png') top left;
+	background: url('../images/texturetastic_gray.png') top left;
 	padding-top: 0;
 
 	.color-segment {
@@ -127,12 +138,12 @@ p.headline-feature {
 
 // Instagram
 .instagram {
-	// background: url('../images/texturetastic_gray.png') top left;
+	background: url('../images/texturetastic_gray.png') top left;
 }
 
 // Categories
 .categories {
-	// background: url('../images/bg-category.jpeg') center center;
+	background: url('../images/bg-category.jpeg') center center;
 	background-size: cover;
 	background-position: center;
 
@@ -153,7 +164,8 @@ p.headline-feature {
 			span {
 				display: block;
 				margin-bottom: 0;
-				font-family: klinic_slabmedium;
+				color: #FFFFFF;
+				font-family: klinic_slablight;
 				font-size: 20px;
 				text-align: center;
 				text-transform: uppercase;
@@ -162,7 +174,10 @@ p.headline-feature {
 		}
 
 		p {
+			color: #FFFFFF;
 			padding: 0 25px;
+			font-family: klinic_slablight;
+			font-size: 18px;
 			text-align: center;
 		}
 	}
@@ -170,7 +185,8 @@ p.headline-feature {
 
 // Spreadshop
 .spreadshop {
-	// background: url('../images/texturetastic_gray.png') top left;
+	background: url('../images/texturetastic_gray.png') top left;
+
 	.banner-stroke {
 		background: url('../images/h2-banner-spreadshop.svg') center top no-repeat;
 	}
@@ -187,11 +203,13 @@ p.headline-feature {
 
 // Contact
 .contact {
+	background: url('../images/bg-contact-2.jpg') top left;
+	-webkit-background-size: cover;
+	background-size: cover;
+
 	.banner-stroke {
-		background: url('../images/h2-banner-spreadshop.svg') center top no-repeat;
+		background: url('../images/h2-banner-contact.svg') center top no-repeat;
 	}
-
-
 
 	.end {
 		float: none !important;

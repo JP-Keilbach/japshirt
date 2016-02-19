@@ -1,7 +1,7 @@
 .wpcf7 {
 	.wpcf7-form {
 		i {
-			background-color: $primary-color;
+			background-color: transparent;
 			display: inline-block;
 			float: left;
 			width: 56px;
@@ -9,37 +9,48 @@
 			line-height: 54px;
 			text-align: center;
 
-			border-bottom: 1px solid #1E1E1E;
-			  border-left: 1px solid #1E1E1E;
-			   border-top: 1px solid #1E1E1E;
+			border-bottom: 1px solid #FFFFFF;
+			  border-left: 1px solid #FFFFFF;
+			   border-top: 1px solid #FFFFFF;
 		}
+
+		p { overflow: hidden; }
 
 		input[type="submit"] {
 			background: transparent;
 			padding: 0 20px;
+			color: #FFFFFF;
 			font-family: $header-font-family;
 			font-size: 20px;
 			line-height: 54px;
 			letter-spacing: 2px;
 			text-transform: lowercase;
 
-			border-bottom: 1px solid #1e1e1e;
-			 border-right: 1px solid #1e1e1e;
+			border-bottom: 1px solid #FFFFFF;
+			 border-right: 1px solid #FFFFFF;
 			  border-left: none;
-			   border-top: 1px solid #1e1e1e;
+			   border-top: 1px solid #FFFFFF;
+		}
+
+		.wpcf7-label {
+			display: block;
 		}
 
 		.wpcf7-form-control-wrap {
+			float: left;
+			width: 89%;
 
 			input, textarea {
+				background-color: rgba(255, 255, 255, 0.2);
 				padding: 0 20px;
-				border: 1px solid #1e1e1e;
+				border: 1px solid #FFFFFF;
 				margin-bottom: 0;
 			}
 
 			input {
 				height: 56px;
 				line-height: 56px;
+				border: 1px solid #FFFFFF;
 			}
 
 			textarea {
@@ -47,13 +58,19 @@
 			}
 		}
 
+		.wpcf7-textarea i { height: 140px; }
+
 		.wpcf7-button {
 			display: table;
 		}
 
+		.wpcf7-button i {
+			background-color: $primary-color;
+		}
+
 		.wpcf7-button:hover i {
 			background-color: transparent;
-			color: #1E1E1E;
+			color: #FFFFFF;
 		}
 
 		.wpcf7-button:hover input {

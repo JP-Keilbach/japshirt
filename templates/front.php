@@ -59,7 +59,7 @@ get_header(); ?>
 
 		<div class="category-feature">
 
-			<div class="small-4 large-4 columns">
+			<div class="small-12 medium-4 large-4 columns">
 				<div class="shield kids">
 					<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/cat-banner-kids.svg" alt="Category Banner Kids">
 					<span class="shield-headline">Minions</span>
@@ -68,18 +68,18 @@ get_header(); ?>
 				<p>Manchego smelly cheese stinking bishop. Everyone loves dolcelatte hard cheese</p>
 			</div><!-- END COLUMNS -->
 
-			<div class="small-4 large-4 columns">
+			<div class="small-12 medium-4 large-4 columns">
 				<div class="shield logo">
-					<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/cat-banner-kids.svg" alt="Category Banner Kids">
+					<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/cat-banner-logo.svg" alt="Category Banner Kids">
 					<span class="shield-headline">Symbols</span>
 				</div>
 				<hr class="solid-cat"/>
 				<p>Manchego smelly cheese stinking bishop. Everyone loves dolcelatte hard cheese</p>
 			</div><!-- END COLUMNS -->
 
-			<div class="small-4 large-4 columns">
+			<div class="small-12 medium-4 large-4 columns">
 				<div class="shield geek">
-					<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/cat-banner-kids.svg" alt="Category Banner Kids">
+					<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/cat-banner-geek.svg" alt="Category Banner Kids">
 					<span class="shield-headline">Portrait</span>
 				</div>
 				<hr class="solid-cat"/>
