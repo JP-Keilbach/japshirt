@@ -13,11 +13,11 @@
 	        box-shadow: none;
 
 	#checkout {
-		background: #FFFFFF;
+		background: rgba(255, 255, 255, 0.5);
 		display: table;
 		float: none;
 		margin: 0 auto;
-		border: 2px solid #1E1E1E;
+		border: 1px solid #1E1E1E;
 
 		&:hover span {
 			background-color: $primary-color;
@@ -41,7 +41,7 @@
 			font-size: rem-calc(20px);
 			text-transform: lowercase;
 			letter-spacing: 2px;
-			line-height: 52px;
+			line-height: 54px;
 
 			&::after {
 				content: 'Artikel im Warenkorb';
@@ -52,11 +52,11 @@
 
 		a.button {
 			float: left;
-			height: 52px;
+			height: 54px;
 			width: 56px;
 			padding: 0;
 			margin: 0;
-			line-height: 52px;
+			line-height: 54px;
 			border: none;
 
 			&:after {
@@ -67,6 +67,10 @@
 			}
 		}
 	}
+}
+
+.home .spreadplugin-menu.fixed {
+	position: relative;
 }
 .spreadplugin-menu.fixed {
 	// position: relative;
@@ -79,108 +83,116 @@
 	        box-shadow: none;
 }
 
+
 // Spread Shop List
 // ----------------
-#spreadplugin-list {
-	padding-top: 28px;
-	margin-bottom: 24px;
+#spreadplugin-items {
+	float: left;
 
-	.spreadplugin-article {
-		width: 280px !important;
-		padding: 0;
+	#spreadplugin-list {
+		padding-top: 28px;
+		margin-top: 19px;
+		margin-bottom: 24px;
 
-		h3 {
-			font-size: rem-calc(28px);
-			line-height: 56px;
-			text-transform: uppercase;
-		}
+		.spreadplugin-article {
+			width: 280px !important;
+			padding: 0;
 
-		.image-wrapper img {
-			margin-bottom: 15px;
-		}
-
-		.actions {
-
-			.size-wrapper {
-				float: left;
-				height: 28px;
-				padding: 0;
-
-				border-top: 1px solid #BABABA;
-				border-bottom: 1px solid #BABABA;
-				border-left: 1px solid #BABABA;
-
-				span {
-					display: block;
-					float: left;
-					padding: 0 15px;
-					color: #1E1E1E;
-					font-size: 16px;
-					line-height: 28px;
-					text-transform: uppercase;
-					border-right: 1px solid #BABABA;
-				}
-
-				#size-select {
-					width: 113px;
-					height: 28px;
-					border: none;
-
-				}
+			h3 {
+				font-size: rem-calc(28px);
+				line-height: 56px;
+				text-transform: uppercase;
 			}
 
-			.add-basket-wrapper {
-				float: left;
+			.image-wrapper img {
+				margin-bottom: 15px;
+			}
 
-				.add-basket-button {
-					padding: 0px 15px;
+			.actions {
 
-					i {
-						color: #FFFFFF;
+				.size-wrapper {
+					float: left;
+					height: 28px;
+					padding: 0;
+
+					border-top: 1px solid #BABABA;
+					border-bottom: 1px solid #BABABA;
+					border-left: 1px solid #BABABA;
+
+					span {
+						display: block;
+						float: left;
+						padding: 0 15px;
+						color: #1E1E1E;
+						font-size: 16px;
 						line-height: 28px;
+						text-transform: uppercase;
+						border-right: 1px solid #BABABA;
 					}
 
-					i::before { display: block; }
+					#size-select {
+						width: 113px;
+						height: 28px;
+						border: none;
+
+					}
+				}
+
+				.add-basket-wrapper {
+					float: left;
+
+					.add-basket-button {
+						padding: 0px 15px;
+
+						i {
+							color: #FFFFFF;
+							line-height: 28px;
+						}
+
+						i::before {
+							display: block;
+						}
+					}
 				}
 			}
 		}
-	}
 
-	.spreadplugin-article.min-view {
+		.spreadplugin-article.min-view {
 
-		.price-wrapper {
-			width: 90px !important;
-			height: 52px !important;
-			min-height: 90px;
-			padding-top: 30px !important;
-			color: #FFFFFF;
-			font-family: $header-font-family;
-			font-size: 24px !important;
-			letter-spacing: 0;
-			text-indent: -3px !important;
-			// border: 2px solid $primary-color;
+			.price-wrapper {
+				width: 90px !important;
+				height: 52px !important;
+				min-height: 90px;
+				padding-top: 30px !important;
+				color: #FFFFFF;
+				font-family: $header-font-family;
+				font-size: 24px !important;
+				letter-spacing: 0;
+				text-indent: -3px !important;
+				// border: 2px solid $primary-color;
 
-			background-position: center center;
-			background-repeat: no-repeat;
-			background-color: $primary-color;
+				background-position: center center;
+				background-repeat: no-repeat;
+				background-color: $primary-color;
+			}
 		}
+
+		.spreadplugin-article.min-view.active {
+			// background: rgba(64,142,47,0.4);
+			padding: 15px !important;
+			margin: -20px 0 7px;
+			border: 1px solid #eaeaea;
+
+			-webkit-border-radius: 0px;
+			-moz-border-radius: 0px;
+			border-radius: 0px;
+
+			-webkit-box-shadow: none;
+			-moz-box-shadow: none;
+			box-shadow: none;
+		}
+
 	}
-
-	.spreadplugin-article.min-view.active {
-		// background: rgba(64,142,47,0.4);
-		padding: 15px !important;
-		margin: -20px 0 7px;
-		border: 1px solid #eaeaea;
-
-		-webkit-border-radius:0px;
-		   -moz-border-radius:0px;
-		        border-radius:0px;
-
-		-webkit-box-shadow: none;
-		   -moz-box-shadow: none;
-		        box-shadow: none;
-	}
-
 }
 
 // Button Styles

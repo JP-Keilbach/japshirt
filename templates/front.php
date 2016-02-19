@@ -61,22 +61,28 @@ get_header(); ?>
 
 			<div class="small-4 large-4 columns">
 				<div class="shield kids">
+					<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/cat-banner-kids.svg" alt="Category Banner Kids">
 					<span class="shield-headline">Minions</span>
 				</div>
+				<hr class="solid-cat"/>
 				<p>Manchego smelly cheese stinking bishop. Everyone loves dolcelatte hard cheese</p>
 			</div><!-- END COLUMNS -->
 
 			<div class="small-4 large-4 columns">
 				<div class="shield logo">
+					<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/cat-banner-kids.svg" alt="Category Banner Kids">
 					<span class="shield-headline">Symbols</span>
 				</div>
+				<hr class="solid-cat"/>
 				<p>Manchego smelly cheese stinking bishop. Everyone loves dolcelatte hard cheese</p>
 			</div><!-- END COLUMNS -->
 
 			<div class="small-4 large-4 columns">
 				<div class="shield geek">
+					<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/cat-banner-kids.svg" alt="Category Banner Kids">
 					<span class="shield-headline">Portrait</span>
 				</div>
+				<hr class="solid-cat"/>
 				<p>Manchego smelly cheese stinking bishop. Everyone loves dolcelatte hard cheese</p>
 			</div><!-- END COLUMNS -->
 
@@ -96,6 +102,30 @@ get_header(); ?>
 			<h2>The Shop</h2>
 			<div class="banner-stroke"></div>
 			<p class="headline-feature">Port-salut cauliflower cheese cheese slices. Swiss gouda stinking bishop cheesecake blue castello cottage cheese camembert de normandie babybel.</p>
+
+			<div class="category-pages">
+				<button class="button">
+					<a href="http://www.google.com">
+						<i class="fa fa-futbol-o"></i>
+						<span data-hover="../more">kids shirt</span>
+					</a>
+				</button>
+
+				<button class="button">
+					<a href="http://www.google.com">
+						<i class="fa fa-paint-brush"></i>
+						<span data-hover="../more">logo shirt</span>
+					</a>
+				</button>
+
+				<button class="button">
+					<a href="http://www.google.com">
+						<i class="fa fa-gamepad"></i>
+						<span data-hover="../more">geek shirt</span>
+					</a>
+				</button>
+
+			</div>
 
 			<?php
 			$allId=32;
@@ -120,7 +150,7 @@ get_header(); ?>
 			<div class="banner-stroke"></div>
 			<p class="headline-feature">Port-salut cauliflower cheese cheese slices. Swiss gouda stinking bishop cheesecake blue castello cottage cheese camembert de normandie babybel.</p>
 			<div class="large-6 large-centered columns end">
-				<?php echo do_shortcode('[contact-form-7 id="41" title="Kontaktformular 1"]'); ?>
+				<?php echo do_shortcode('[contact-form-7 id="35" title="Japshirt Contact Form"]'); ?>
 			</div>
 		</div> <!-- END COLUMNS -->
 	</div> <!-- END ROW -->

@@ -1,12 +1,17 @@
 .wpcf7 {
 	.wpcf7-form {
-		margin-bottom: 112px;
 		i {
+			background-color: $primary-color;
 			display: inline-block;
+			float: left;
 			width: 56px;
-			line-height: 52px;
+			color: #FFFFFF;
+			line-height: 54px;
 			text-align: center;
-			border: 2px solid #1E1E1E;
+
+			border-bottom: 1px solid #1E1E1E;
+			  border-left: 1px solid #1E1E1E;
+			   border-top: 1px solid #1E1E1E;
 		}
 
 		input[type="submit"] {
@@ -14,17 +19,21 @@
 			padding: 0 20px;
 			font-family: $header-font-family;
 			font-size: 20px;
-			line-height: 52px;
+			line-height: 54px;
 			letter-spacing: 2px;
 			text-transform: lowercase;
-			border: 2px solid #1e1e1e;
+
+			border-bottom: 1px solid #1e1e1e;
+			 border-right: 1px solid #1e1e1e;
+			  border-left: none;
+			   border-top: 1px solid #1e1e1e;
 		}
 
 		.wpcf7-form-control-wrap {
 
 			input, textarea {
 				padding: 0 20px;
-				border: 2px solid #1e1e1e;
+				border: 1px solid #1e1e1e;
 				margin-bottom: 0;
 			}
 
@@ -36,7 +45,20 @@
 			textarea {
 				height: 140px;
 			}
+		}
 
+		.wpcf7-button {
+			display: table;
+		}
+
+		.wpcf7-button:hover i {
+			background-color: transparent;
+			color: #1E1E1E;
+		}
+
+		.wpcf7-button:hover input {
+			background-color: $primary-color;
+			color: #FFFFFF;
 		}
 	}
 }
