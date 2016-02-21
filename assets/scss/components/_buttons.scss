@@ -1,3 +1,10 @@
+// Japshirt Theme Buttons
+// ----------------------
+//
+// Table of Content
+//
+// -
+
 .sites-button {
 	background: #FF6908;
 	font-size: 1.25rem;
@@ -77,6 +84,23 @@ button.button {
 .button:hover i {
 	background-color: #FFFFFF;
 	color: #0a0a0a;
+}
+
+/* 00 - Inverse Button
+ * -------------------
+ */
+button.button.inverse {
+	a {
+		padding-right: 0px;
+		padding-left: 15px;
+	}
+
+	i {
+		float: right;
+		margin-right: 0px;
+		margin-left: 15px;
+	}
+
 }
 
 

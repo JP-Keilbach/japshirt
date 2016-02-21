@@ -56,6 +56,12 @@
 			textarea {
 				height: 140px;
 			}
+
+			span.wpcf7-not-valid-tip {
+				background-color: rgba(244, 98, 83, 0.5);
+				padding: 0 15px;
+				color: #FFFFFF;
+			}
 		}
 
 		.wpcf7-textarea i { height: 140px; }
@@ -76,6 +82,18 @@
 		.wpcf7-button:hover input {
 			background-color: $primary-color;
 			color: #FFFFFF;
+		}
+
+		div.wpcf7-validation-errors {
+			color: #FFFFFF;
+			border: 1px solid #FFFFFF;
+		}
+
+		div.wpcf7-response-output {
+			height: 56px;
+			padding: 0 15px;
+			margin: 28px 0 28px 0;
+
 		}
 	}
 }

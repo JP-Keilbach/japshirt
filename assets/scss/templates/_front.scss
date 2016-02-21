@@ -1,6 +1,19 @@
+// Japshirt Theme Front
+// -------------------
+//
+// Table of Content
+//
+// 01 - Section Header
+// 02 - Headings
+// 03 - Paragraphs
+// 04 - About Section
+// 05 - Instagram Section
+// 06 - Category Section
+// 07 - Spreadshop Section
+// 08 - Contact Section
+
 body {
 	line-height: 28px;
-
 }
 
 p {
@@ -8,12 +21,12 @@ p {
 	margin-bottom: 28px;
 }
 
-// Page header
+/* Baseline Grid on / off */
 .off-canvas-content {
 	background-image: url("../images/baseline-grid.png");
 }
 
-// Section header
+// 01 - Section header
 .about,
 .categories,
 .spreadshop,
@@ -32,7 +45,7 @@ p {
 	padding: 112px 0;
 }
 
-// Headings
+// 02 - Headings
 .categories h2,
 .spreadshop h2,
 .contact h2 {
@@ -48,9 +61,20 @@ p {
 	color: #FFFFFF;
 }
 
-// Paragraphs
+// 03 - Paragraphs
 p.headline-feature {
-	@include grid-column(6);
+
+	@include breakpoint(small) {
+		@include grid-column(12);
+	}
+
+	@include breakpoint(medium) {
+		@include grid-column(12);
+	}
+
+	@include breakpoint(large) {
+		@include grid-column(8);
+	}
 
 	float: none !important;
 	margin: 0 auto 56px auto;
@@ -64,22 +88,30 @@ p.headline-feature {
 	color: #FFFFFF;
 }
 
-// About
+// 04 - About Section
 .about {
 	background: url('../images/texturetastic_gray.png') top left;
 	padding-top: 0;
 
-	.color-segment {
-		margin-bottom: 22px;
-	}
+	.color-segment { margin-bottom: 22px; }
 
 	h1 {
-		font-size: rem-calc(100px);
+		@include breakpoint(small) {
+			font-size: 80px;
+			line-height: 84px;
+		}
+
+		@include breakpoint(medium) {
+			font-size: 112px;
+		}
+
 		line-height: 112px;
 		text-align: center;
 		text-transform: uppercase;
-		letter-spacing: 0px;
+		letter-spacing: -1px;
 		margin-bottom: 0;
+
+
 	}
 
 	h2 {
@@ -136,14 +168,15 @@ p.headline-feature {
 	}
 }
 
-// Instagram
+// 05 - Instagram Section
 .instagram {
 	background: url('../images/texturetastic_gray.png') top left;
 }
 
-// Categories
+// 06 - Categories Section
 .categories {
 	background: url('../images/bg-category.jpeg') center center;
+	// background: rgba(0,0,0,0.2);
 	background-size: cover;
 	background-position: center;
 
@@ -183,9 +216,10 @@ p.headline-feature {
 	}
 }
 
-// Spreadshop
+// 07 - Speadshop Section
 .spreadshop {
 	background: url('../images/texturetastic_gray.png') top left;
+	// background: rgba(0,0,0,0.2);
 
 	.banner-stroke {
 		background: url('../images/h2-banner-spreadshop.svg') center top no-repeat;
@@ -195,15 +229,25 @@ p.headline-feature {
 		display: table;
 		margin: 0 auto;
 
+		button {
+			@include breakpoint(small) {
+				width: 100%;
+			}
+			@include breakpoint(medium) {
+				width: auto;
+			}
+		}
+
 		button:last-child {
 			margin-right: 0;
 		}
 	}
 }
 
-// Contact
+// 08 - Contact Section
 .contact {
-	background: url('../images/bg-contact-2.jpg') top left;
+	background: url('../images/bg-contact-3.jpg') center top no-repeat;
+	// background: rgba(0,0,0,0.2);
 	-webkit-background-size: cover;
 	background-size: cover;
 
@@ -214,15 +258,10 @@ p.headline-feature {
 	.end {
 		float: none !important;
 	}
-}
 
-// Section divider
-.section-divider {
-	@include grid-row();
-
-	hr {
-		@include grid-column(12);
-		@extend .dotted;
-		box-sizing: border-box;
+	.wpcf7 .wpcf7-form .wpcf7-form-control-wrap{
+		@include breakpoint(small) { width: 80%; }
+		@include breakpoint(medium) { width: 90%; }
+		@include breakpoint(large) { width: 90%; }
 	}
 }

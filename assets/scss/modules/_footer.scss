@@ -4,6 +4,28 @@
 	margin: 0 auto;
 	margin-top: 0;
 
+	.color-segment {
+		margin-bottom: 0;
+	}
+
+	.footer-meta {
+		display: table;
+		margin: 0 auto;
+		list-style: none;
+
+		li {
+			float: left;
+		}
+
+		li button {
+			margin: 50px 10px 0 10px;
+		}
+	}
+
+	img.slogan {
+		height: 140px;
+	}
+
 	#footer {
 		@include grid-row();
 		padding: rem-calc(30) 0;

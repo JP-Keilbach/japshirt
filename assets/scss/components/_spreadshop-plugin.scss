@@ -13,6 +13,13 @@
 	        box-shadow: none;
 
 	#checkout {
+
+		@include breakpoint(small) {
+			width: 100%;
+			text-align: center;
+		}
+		@include breakpoint(medium) { width: auto; }
+
 		background: rgba(255, 255, 255, 0.5);
 		display: table;
 		float: none;
@@ -34,8 +41,9 @@
 		}
 
 		span {
+
 			display: inline-block;
-			float: right;
+			// float: right;
 			padding: 0 20px;
 			font-family: $header-font-family;
 			font-size: rem-calc(20px);
@@ -85,7 +93,6 @@
 
 
 // Spread Shop List
-// ----------------
 #spreadplugin-items {
 	float: left;
 
@@ -169,7 +176,6 @@
 				font-size: 24px !important;
 				letter-spacing: 0;
 				text-indent: -3px !important;
-				// border: 2px solid $primary-color;
 
 				background-position: center center;
 				background-repeat: no-repeat;
@@ -178,9 +184,18 @@
 		}
 
 		.spreadplugin-article.min-view.active {
-			// background: rgba(64,142,47,0.4);
+
+			@include breakpoint(small) {
+				display: table;
+				margin: 0 auto;
+			}
+
+			@include breakpoint(medium) {
+				display: inline-block;
+				margin: -20px 0 7px;
+			}
+
 			padding: 15px !important;
-			margin: -20px 0 7px;
 			border: 1px solid #eaeaea;
 
 			-webkit-border-radius: 0px;

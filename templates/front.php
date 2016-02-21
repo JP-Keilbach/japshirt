@@ -19,7 +19,7 @@ get_header(); ?>
 				<span class="awesome-people">Awesome People</span>
 				<span class="like-you">Like You <i class="fa fa-heart"></i></span>
 			</div>
-			<p class="headline-feature">I will share my passion for producing wearable art that tells a story,<br> strengthens humanity and inspires life through creativity & design.</p>
+			<p class="headline-feature">I will share my passion for producing wearable art that tells a story, strengthens humanity and inspires life through creativity & design.</p>
 		</div> <!-- END COLUMNS -->
 	</div> <!-- END ROW -->
 </section> <!-- END SECTION -->
@@ -149,7 +149,7 @@ get_header(); ?>
 			<h2>Kontakt</h2>
 			<div class="banner-stroke"></div>
 			<p class="headline-feature">Port-salut cauliflower cheese cheese slices. Swiss gouda stinking bishop cheesecake blue castello cottage cheese camembert de normandie babybel.</p>
-			<div class="large-6 large-centered columns end">
+			<div class="small-12 medium-12 large-8 small-centered medium-centered large-centered columns end">
 				<?php echo do_shortcode('[contact-form-7 id="35" title="Japshirt Contact Form"]'); ?>
 			</div>
 		</div> <!-- END COLUMNS -->
