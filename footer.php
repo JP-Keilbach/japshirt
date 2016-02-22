@@ -164,22 +164,46 @@
 						<p>Passt Nicht? Schick's zurück!<br>30 Tage Lang.</p>
 					</div>
 				</div>
+			</div> <!-- END ROW -->
 
-				<div class="small-6 large-6 small-centered large-centered columns">
+			<div class="row">
+				<div class="small-12 large-6 large-centered columns">
 					<div class="social-bar">
 						<ul>
-							<li class="empty-cell-left"></li>
-							<li class="facebook"><i class="fa fa-facebook"></i></li>
-							<li class="instagram"><i class="fa fa-instagram"></i></li>
-							<li class="pinterest"><i class="fa fa-pinterest"></i></li>
-							<li class="spreadshirt"><span class="icon-spreadshirt"></span></li>
-							<li class="empty-cell-right"></li>
+							<li class="empty-cell left"></li>
+							<li class="facebook"><a href=""><i class="fa fa-facebook"></i></a></li>
+							<li class="instagram"><a href=""><i class="fa fa-instagram"></i></a></li>
+							<li class="pinterest"><a href=""><i class="fa fa-pinterest"></i></a></li>
+							<li class="spreadshirt"><a href=""><i class="fa fa-bolt"></i></a></li>
+							<li class="empty-cell right"></li>
 						</ul>
 					</div>
 				</div>
 			</div> <!-- END ROW -->
 
+			<div class="row">
+				<div class="small-12 large-6 large-centered columns">
+					<div class="footer-meta-menu">
+						<ul>
+							<li><a href="#">about</a></li>
+							<li><a href="#">kategorien</a></li>
+							<li><a href="#">shop</a></li>
+							<li><a href="#">contact</a></li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- END ROW -->
 
+			<div class="row">
+				<div class="small-12 large-12 large-centered columns">
+					<div class="services">
+						<ul>
+							<li><img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/parcelservices.png" alt="Parcelservices"></li>
+							<li><img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/payment.png" alt="Payment"></li>
+						</ul>
+					</div>
+				</div>
+			</div> <!-- END ROW -->
 
 			<footer id="footer">
 				<?php do_action( 'foundationpress_before_footer' ); ?>

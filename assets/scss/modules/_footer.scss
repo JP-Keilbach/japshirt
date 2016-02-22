@@ -16,7 +16,6 @@
 	max-width: 100%;
 	width: 100%;
 	margin: 0 auto;
-	margin-top: 0;
 
 	.color-segment {
 		margin-bottom: 0;
@@ -143,6 +142,7 @@
 		}
 	}
 
+	// 00 - Send Back Slogan
 	.send-back {
 		p {
 			display: table;
@@ -150,7 +150,103 @@
 			margin: 0 auto;
 			font-size: 18px;
 			text-align: center;
+			// border-bottom: 1px solid #BABABA;
+		}
+	}
+
+	// 00 - Social Bar
+	.social-bar {
+		ul {
+			display: table;
+			margin: 0 auto;
+			list-style: none;
+
 			border-bottom: 1px solid #BABABA;
+			   border-top: 1px solid #BABABA;
+
+
+
+			li {
+				float: left;
+				border-left: 1px solid #BABABA;
+			}
+
+			li:hover { border: none;}
+
+			li a i {
+				display: block;
+				width: 56px;
+				color: #1e1e1e;
+				line-height: 54px;
+				text-align: center;
+			}
+
+			li a i:hover {
+				background: $primary-color;
+				color: #FFFFFF;
+			}
+
+			li.empty-cell {
+				@include breakpoint(small) { width: 28px; }
+				@include breakpoint(medium) { width: 56px; }
+
+				display: block;
+				height: 54px;
+			}
+
+			li.empty-cell.left {
+				border: none;
+			}
+		}
+	}
+
+	// 00 - Footer Meta Menu
+	.footer-meta-menu {
+		padding: 14px 0;
+
+		ul {
+			display: table;
+			margin: 0 auto;
+
+			li {
+				float: left;
+				list-style: none;
+
+				a {
+					color: #BABABA;
+					padding: 0 10px;
+					line-height: 28px;
+					text-transform: uppercase;
+				}
+
+				a:hover { color: $primary-color; }
+			}
+		}
+	}
+
+	// 00 - Services
+	.services {
+		background: url('../images/bg-stripes.png') top left;
+		padding-top: 20px;
+
+		border-bottom: 1px solid #BABABA;
+		   border-top: 1px solid #BABABA;
+
+		ul {
+			display: table;
+			margin: 0 auto;
+			list-style: none;
+
+			li {
+				@include breakpoint(small) {
+					float: none;
+					margin-bottom: 14px;
+				}
+
+				@include breakpoint(medium) {
+					float: left;
+					padding: 0 10px;}
+			}
 		}
 	}
 
