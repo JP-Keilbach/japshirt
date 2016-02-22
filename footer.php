@@ -20,55 +20,164 @@
 			</div>
 
 			<div class="row">
-
-				<div class="medium-5 large-4 columns">
-					<ul class="footer-meta">
-						<li>
-							<button type="button" class="button red inverse">
-								<a href="">
-									<i class="fa fa-instagram"></i>
-									<span data-hover="/jabshirt">Meine Bestellungen</span>
-								</a>
-							</button>
-						</li>
-
-						<li>
-							<button type="button" class="button red inverse">
-								<a href="">
-									<i class="fa fa-instagram"></i>
-									<span data-hover="/jabshirt">Spreadhelp</span>
-								</a>
-							</button>
-						</li>
-					</ul>
+				<div class="small-12 large-12 columns ">
+					<div class="guarantee">
+						<img class="slogan" src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/slogan-garantie.svg" alt="Unsere Zufriedenheits Garantie" class="slogan">
+					</div>
 				</div>
 
-				<div class="medium-2 large-4 columns">
-					<img class="slogan" src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/slogan-garantie.svg" alt="Unsere Zufriedenheits Garantie" class="slogan">
+				<div class="small-12 large-12 columns">
+					<div class="footer-meta-mobile">
+						<ul class="footer-meta-full">
+							<li class="">
+								<button type="button" class="button red">
+									<a href="">
+										<i class="fa fa-shopping-cart"></i>
+										<span data-hover="/jabshirt">Bestellungen</span>
+									</a>
+								</button>
+							</li>
+
+							<li class="">
+								<button type="button" class="button red">
+									<a href="">
+										<i class="fa fa-question"></i>
+										<span data-hover="/jabshirt">Spreadhelp</span>
+									</a>
+								</button>
+							</li>
+
+							<li class="">
+								<button type="button" class="button red">
+									<a href="">
+										<i class="fa fa-credit-card"></i>
+										<span data-hover="/jabshirt">Zahlungsarten</span>
+									</a>
+								</button>
+							</li>
+
+							<li>
+								<button type="button" class="button red">
+									<a href="">
+										<i class="fa fa-clock-o"></i>
+										<span data-hover="/jabshirt">Lieferzeiten</span>
+									</a>
+								</button>
+							</li>
+						</ul>
+					</div> <!-- END FOOTER META MOBILE -->
+				</div> <!-- END COLUMNS -->
+
+				<div class="small-12 large-12 large-centered columns">
+					<div class="footer-meta-tablet">
+						<div class="small-12 medium-6 large-6 columns">
+							<ul class="footer-meta-left">
+								<li class="left-top">
+									<button type="button" class="button red inverse">
+										<a href="">
+											<i class="fa fa-shopping-cart"></i>
+											<span data-hover="/jabshirt">Bestellungen</span>
+										</a>
+									</button>
+								</li>
+
+								<li class="left-bottom">
+									<button type="button" class="button red inverse">
+										<a href="">
+											<i class="fa fa-question"></i>
+											<span data-hover="/jabshirt">Spreadhelp</span>
+										</a>
+									</button>
+								</li>
+							</ul>
+						</div>
+
+						<div class="small-12 medium-6 large-6 columns">
+							<ul class="footer-meta-right">
+								<li class="right-top">
+									<button type="button" class="button red">
+										<a href="">
+											<i class="fa fa-credit-card"></i>
+											<span data-hover="/jabshirt">Zahlungsarten</span>
+										</a>
+									</button>
+								</li>
+
+								<li class="right-bottom">
+									<button type="button" class="button red">
+										<a href="">
+											<i class="fa fa-clock-o"></i>
+											<span data-hover="/jabshirt">Lieferzeiten</span>
+										</a>
+									</button>
+								</li>
+							</ul>
+						</div>
+					</div> <!-- END FOOTER META TABLET -->
+				</div> <!-- END COLUMNS -->
+
+				<div class="small-12 large-12 columns">
+					<div class="footer-meta-desktop">
+						<ul class="footer-meta">
+							<li class="left-outer">
+								<button type="button" class="button red inverse">
+									<a href="">
+										<i class="fa fa-shopping-cart"></i>
+										<span data-hover="/jabshirt">Bestellungen</span>
+									</a>
+								</button>
+							</li>
+
+							<li class="left-inner">
+								<button type="button" class="button red inverse">
+									<a href="">
+										<i class="fa fa-question"></i>
+										<span data-hover="/jabshirt">Spreadhelp</span>
+									</a>
+								</button>
+							</li>
+
+							<li class="right-inner">
+								<button type="button" class="button red">
+									<a href="">
+										<i class="fa fa-clock-o"></i>
+										<span data-hover="/jabshirt">Lieferzeiten</span>
+									</a>
+								</button>
+							</li>
+
+							<li class="right-outer">
+								<button type="button" class="button red">
+									<a href="">
+										<i class="fa fa-credit-card"></i>
+										<span data-hover="/jabshirt">Zahlungsarten</span>
+									</a>
+								</button>
+							</li>
+						</ul>
+					</div> <!-- END FOOTER META DESKTOP -->
+				</div> <!-- END COLUMNS -->
+
+				<div class="small-12 large-12 columns">
+					<div class="send-back">
+						<hr class="solid top">
+						<p>Passt Nicht? Schick's zurück!<br>30 Tage Lang.</p>
+					</div>
 				</div>
 
-				<div class="medium-5 large-4 columns">
-					<ul class="footer-meta">
-						<li>
-							<button type="button" class="button red">
-								<a href="">
-									<i class="fa fa-instagram"></i>
-									<span data-hover="/jabshirt">Lieferzeiten</span>
-								</a>
-							</button>
-						</li>
-
-						<li>
-							<button type="button" class="button red">
-								<a href="">
-									<i class="fa fa-instagram"></i>
-									<span data-hover="/jabshirt">Zahlungsarten</span>
-								</a>
-							</button>
-						</li>
-					</ul>
+				<div class="small-6 large-6 small-centered large-centered columns">
+					<div class="social-bar">
+						<ul>
+							<li class="empty-cell-left"></li>
+							<li class="facebook"><i class="fa fa-facebook"></i></li>
+							<li class="instagram"><i class="fa fa-instagram"></i></li>
+							<li class="pinterest"><i class="fa fa-pinterest"></i></li>
+							<li class="spreadshirt"><span class="icon-spreadshirt"></span></li>
+							<li class="empty-cell-right"></li>
+						</ul>
+					</div>
 				</div>
-			</div>
+			</div> <!-- END ROW -->
 
 
 

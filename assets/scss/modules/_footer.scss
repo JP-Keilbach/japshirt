@@ -1,4 +1,18 @@
+// Japshirt Theme Footer
+// ---------------------
+//
+// Table of Content (Footer Meta)
+//
+// 01 - Mobile Size Settings
+// 02 - Tablet Size Settings
+// 03 - Desktop Size Settings
+//
+// Table of Content (Footer)
+//
+// 04 - Desktop Size Settings
+
 #footer-container {
+	background: url('../images/texturetastic_gray.png') top left;
 	max-width: 100%;
 	width: 100%;
 	margin: 0 auto;
@@ -8,24 +22,139 @@
 		margin-bottom: 0;
 	}
 
-	.footer-meta {
-		display: table;
-		margin: 0 auto;
-		list-style: none;
+	.guarantee {
+		img {
+			position: absolute;
+			height: 162px;
+			max-height: 90%;
+			max-width: 90%;
+			margin: auto;
+			left: 0;
+			right: 0;
+		}
+	}
 
-		li {
+	// 01 - Mobile Size Settings
+	.footer-meta-mobile {
+		@include hide-for(medium);
+
+		padding-top: 196px;
+
+		.footer-meta-full {
+			list-style-type: none;
+			margin-left: 0;
+			margin-bottom: 0;
+
+			li {
+				display: table;
+				margin: 0 auto;
+			}
+
+			button {
+				margin-right: 0;
+			}
+		}
+	}
+
+	// 02 - Tablet Size Settings
+	.footer-meta-tablet {
+		@include show-for(medium);
+
+		@include hide-for(xlarge);
+
+		.footer-meta-left,
+		.footer-meta-right {
+			display: table;
+			margin-top: 22px;
+			margin-bottom: 0;
+			list-style-type: none;
+
+			li.left-bottom,
+			li.right-bottom {
+				button { width: 200px; }
+			}
+
+			li.left-top,
+			li.right-top {
+				button { width: 220px; }
+			}
+		}
+
+		.footer-meta-left {
 			float: left;
+
+			button {
+				@include breakpoint(medium) {
+					float: right;
+					margin-left: 0;
+				}
+
+				float: right;
+			}
 		}
 
-		li button {
-			margin: 50px 10px 0 10px;
+		.footer-meta-right {
+			float: right;
+
+			button { float: left; }
 		}
 	}
 
-	img.slogan {
-		height: 140px;
+	// 03 - Desktop Size Settings
+	.footer-meta-desktop {
+		@include show-for(xlarge);
+
+		.footer-meta {
+			display: table;
+			margin: 0 auto;
+			list-style: none;
+
+			li {
+				@include breakpoint(xlarge) { margin-top: 56px; }
+
+				float: left;
+			}
+
+			li.left-inner,
+			li.right-inner {
+				button { width: 200px; }
+			}
+
+			li.left-outer,
+			li.right-outer {
+				button { width: 220px; }
+			}
+
+			li.left-inner {
+				@include breakpoint(large) { margin-right: 50px; }
+
+				@include breakpoint(xlarge){ margin-right: 100px; }
+			}
+
+			li.right-inner {
+				@include breakpoint(large) { margin-left: 50px; }
+
+				@include breakpoint(xlarge){ margin-left: 100px; }
+			}
+
+			li button {
+				margin: 50px 10px 0 10px;
+			}
+		}
 	}
 
+	.send-back {
+		p {
+			display: table;
+			padding: 0 50px 27px 50px;
+			margin: 0 auto;
+			font-size: 18px;
+			text-align: center;
+			border-bottom: 1px solid #BABABA;
+		}
+	}
+
+	// 04 - Footer
 	#footer {
 		@include grid-row();
 		padding: rem-calc(30) 0;
