@@ -23,7 +23,7 @@ p {
 
 /* Baseline Grid on / off */
 .off-canvas-content {
-	// background-image: url("../images/baseline-grid.png");
+	background-image: url("../images/baseline-grid.png");
 }
 
 // 01 - Section header
@@ -142,22 +142,26 @@ p.headline-feature {
 				height: 1px;
 				width: 50px;
 				border-bottom: 1px solid #bababa;
-				margin: 14px 15px 0 15px;
+				margin:
+					rem-calc(14)
+					rem-calc(15)
+					rem-calc(0)
+					rem-calc(15);
 			}
 		}
 
 		.awesome-people {
 			display: table;
-			font-size: 28px;
-			line-height: 28px;
+			font-size: rem-calc(28);
+			line-height: rem-calc(28);
 			text-transform: uppercase;
 			margin: 0 auto;
 		}
 
 		.like-you {
 			display: table;
-			font-size: 16px;
-			line-height: 28px;
+			font-size: rem-calc(16);
+			line-height: rem-calc(28);
 			text-transform: uppercase;
 			margin: 0 auto;
 
@@ -176,7 +180,7 @@ p.headline-feature {
 // 06 - Categories Section
 .categories {
 	background: url('../images/bg-category.jpeg') center center;
-	// background: rgba(0,0,0,0.2);
+	// background: rgba(0,0,0,0.1);
 	background-size: cover;
 	background-position: center;
 
@@ -191,7 +195,7 @@ p.headline-feature {
 
 			img {
 				height: 196px;
-				margin-bottom: 28px;
+				margin-bottom: rem-calc(28);
 			}
 
 			span {
@@ -208,9 +212,9 @@ p.headline-feature {
 
 		p {
 			color: #FFFFFF;
-			padding: 0 25px;
+			padding: 0 rem-calc(25);
 			font-family: klinic_slablight;
-			font-size: 18px;
+			font-size: rem-calc(18);
 			text-align: center;
 		}
 	}
@@ -230,12 +234,8 @@ p.headline-feature {
 		margin: 0 auto;
 
 		button {
-			@include breakpoint(small) {
-				width: 100%;
-			}
-			@include breakpoint(medium) {
-				width: auto;
-			}
+			@include breakpoint(small) { width: 100%; }
+			@include breakpoint(medium) { width: auto; }
 		}
 
 		button:last-child {

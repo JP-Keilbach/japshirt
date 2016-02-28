@@ -120,7 +120,7 @@
 					<div class="footer-meta-desktop">
 						<ul class="footer-meta">
 							<li class="left-outer">
-								<button type="button" class="button red inverse">
+								<button type="button" class="button blue inverse">
 									<a href="">
 										<i class="fa fa-shopping-cart"></i>
 										<span data-hover="/jabshirt">Bestellungen</span>
@@ -129,7 +129,7 @@
 							</li>
 
 							<li class="left-inner">
-								<button type="button" class="button red inverse">
+								<button type="button" class="button gray inverse">
 									<a href="">
 										<i class="fa fa-question"></i>
 										<span data-hover="/jabshirt">Spreadhelp</span>
@@ -138,7 +138,7 @@
 							</li>
 
 							<li class="right-inner">
-								<button type="button" class="button red">
+								<button type="button" class="button gray">
 									<a href="">
 										<i class="fa fa-clock-o"></i>
 										<span data-hover="/jabshirt">Lieferzeiten</span>
@@ -147,7 +147,7 @@
 							</li>
 
 							<li class="right-outer">
-								<button type="button" class="button red">
+								<button type="button" class="button gray">
 									<a href="">
 										<i class="fa fa-credit-card"></i>
 										<span data-hover="/jabshirt">Zahlungsarten</span>

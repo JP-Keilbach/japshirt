@@ -6,13 +6,17 @@
 // 01 - Mobile Size Settings
 // 02 - Tablet Size Settings
 // 03 - Desktop Size Settings
+// 04 - Send Back Slogan
+// 05 - Social Bar
+// 06 - Footer Meta Menu
+// 07 - Services
 //
 // Table of Content (Footer)
 //
-// 04 - Desktop Size Settings
+// 08 - Desktop Size Settings
 
 #footer-container {
-	background: url('../images/texturetastic_gray.png') top left;
+	// background: url('../images/texturetastic_gray.png') top left;
 	max-width: 100%;
 	width: 100%;
 	margin: 0 auto;
@@ -142,7 +146,7 @@
 		}
 	}
 
-	// 00 - Send Back Slogan
+	// 04 - Send Back Slogan
 	.send-back {
 		p {
 			display: table;
@@ -154,7 +158,7 @@
 		}
 	}
 
-	// 00 - Social Bar
+	// 05 - Social Bar
 	.social-bar {
 		ul {
 			display: table;
@@ -163,8 +167,6 @@
 
 			border-bottom: 1px solid #BABABA;
 			   border-top: 1px solid #BABABA;
-
-
 
 			li {
 				float: left;
@@ -200,7 +202,7 @@
 		}
 	}
 
-	// 00 - Footer Meta Menu
+	// 06 - Footer Meta Menu
 	.footer-meta-menu {
 		padding: 14px 0;
 
@@ -224,7 +226,7 @@
 		}
 	}
 
-	// 00 - Services
+	// 07 - Services
 	.services {
 		background: url('../images/bg-stripes.png') top left;
 		padding-top: 20px;
@@ -240,7 +242,7 @@
 			li {
 				@include breakpoint(small) {
 					float: none;
-					margin-bottom: 14px;
+					margin-bottom: 20px;
 				}
 
 				@include breakpoint(medium) {
@@ -250,7 +252,7 @@
 		}
 	}
 
-	// 04 - Footer
+	// 08 - Footer
 	#footer {
 		@include grid-row();
 		padding: rem-calc(30) 0;
