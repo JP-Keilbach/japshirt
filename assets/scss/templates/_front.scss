@@ -24,6 +24,7 @@ p {
 /* Baseline Grid on / off */
 .off-canvas-content {
 	background-image: url("../images/baseline-grid.png");
+	// background: url('../images/texturetastic_gray.png') top left;
 }
 
 // 01 - Section header
@@ -36,13 +37,13 @@ p {
 		display: table;
 		height: 56px;
 		width: 280px;
-		margin: 0 auto;
+		margin: 0 auto 56px auto;
 	}
 }
 
 .categories,
 .contact {
-	padding: 112px 0;
+	padding: 0;
 }
 
 // 02 - Headings
@@ -90,7 +91,6 @@ p.headline-feature {
 
 // 04 - About Section
 .about {
-	background: url('../images/texturetastic_gray.png') top left;
 	padding-top: 0;
 
 	.color-segment { margin-bottom: 22px; }
@@ -174,12 +174,12 @@ p.headline-feature {
 
 // 05 - Instagram Section
 .instagram {
-	background: url('../images/texturetastic_gray.png') top left;
+
 }
 
 // 06 - Categories Section
 .categories {
-	background: url('../images/bg-category.jpeg') center center;
+	background: url('../images/bg-category.jpg') center center;
 	// background: rgba(0,0,0,0.1);
 	background-size: cover;
 	background-position: center;
@@ -194,7 +194,7 @@ p.headline-feature {
 			margin: 0 auto;
 
 			img {
-				height: 196px;
+				height: 364px;
 				margin-bottom: rem-calc(28);
 			}
 
@@ -222,7 +222,6 @@ p.headline-feature {
 
 // 07 - Speadshop Section
 .spreadshop {
-	background: url('../images/texturetastic_gray.png') top left;
 	// background: rgba(0,0,0,0.2);
 
 	.banner-stroke {
@@ -246,7 +245,7 @@ p.headline-feature {
 
 // 08 - Contact Section
 .contact {
-	background: url('../images/bg-contact-3.jpg') center top no-repeat;
+	background: url('../images/bg-contact.jpg') center top no-repeat;
 	// background: rgba(0,0,0,0.2);
 	-webkit-background-size: cover;
 	background-size: cover;

@@ -171,15 +171,17 @@
 				height: 52px !important;
 				min-height: 90px;
 				padding-top: 30px !important;
-				color: #FFFFFF;
+				color: #1E1E1E;
 				font-family: $header-font-family;
 				font-size: 24px !important;
 				letter-spacing: 0;
 				text-indent: -3px !important;
 
+				border: 1px solid rgba(30, 30, 30, 0.5);
+
 				background-position: center center;
-				background-repeat: no-repeat;
-				background-color: $primary-color;
+				  background-repeat: no-repeat;
+				   background-color: rgba(255, 255, 255, 0.5);
 			}
 		}
 

@@ -14,8 +14,12 @@
 		</section> <!-- END CONTAINER -->
 
 		<div id="footer-container">
-			<div class="color-segment top">
-				<div class="segment red"></div>
+			<div class="color-segment rainbow">
+				<div class="color-segment-inner">
+					<div class="segment blue"></div>
+					<div class="segment yellow"></div>
+					<div class="segment red"></div>
+				</div>
 				<hr class="solid" />
 			</div>
 
@@ -120,7 +124,7 @@
 					<div class="footer-meta-desktop">
 						<ul class="footer-meta">
 							<li class="left-outer">
-								<button type="button" class="button blue inverse">
+								<button type="button" class="button gray inverse">
 									<a href="">
 										<i class="fa fa-shopping-cart"></i>
 										<span data-hover="/jabshirt">Bestellungen</span>

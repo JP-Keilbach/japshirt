@@ -2,29 +2,59 @@
 	background-color: $primary-color;
 
 	@include breakpoint(small) {
-		background: url('../images/header-bg-tuntra.jpg') center center;
+		background: url('../images/bg-header.jpg') center center;
 		background-size: cover;
 		background-position: center;
 		padding: rem-calc(24px) 0 rem-calc(24px) 0;
 		margin: 0;
-		height: 560px;
+		height: rem-calc(672);
 		position: relative;
 		text-align: left;
 	}
 
 	@include breakpoint(medium) {
-		background: url('../images/header-bg-tuntra.jpg') center bottom;
+		background: url('../images/bg-header.jpg') center bottom;
 		background-size: cover;
 		background-position: center;
-		height: rem-calc(560);
+		height: rem-calc(672);
 		margin: 0;
 	}
 
 	.header-intro {
+		.logo-container {
+			background: url('../images/logo.png') center center no-repeat;
+			display: table;
+			margin: 84px auto 0 auto;
+			height: 476px;
+			width: 100%;
+
+			a {
+				display: table;
+				margin: 300px auto 0 auto;
+				color: #FFFFFF;
+				font-family: $body-font-family;
+				font-size: 15px;
+				line-height: 35px;
+				text-transform: uppercase;
+
+				border-bottom: 1px solid $gray;
+				   border-top: 1px solid $gray;
+
+				&:hover {
+					color: $primary-color;
+
+					border-bottom: 1px solid $primary-color;
+					   border-top: 1px solid $primary-color;
+				}
+
+				span { padding: 0 10px; }
+			}
+		}
+
 		img.logo {
 			display: table;
-			margin: 56px auto 0 auto;
-			height: 392px;
+			margin: 84px auto 0 auto;
+			height: 476px;
 		}
 	}
 

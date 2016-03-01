@@ -5,8 +5,12 @@ Template Name: Front
 get_header(); ?>
 
 <section class="about">
-	<div class="color-segment top">
-		<div class="segment red"></div>
+	<div class="color-segment rainbow">
+		<div class="color-segment-inner">
+			<div class="segment blue"></div>
+			<div class="segment yellow"></div>
+			<div class="segment red"></div>
+		</div>
 		<hr class="solid" />
 	</div>
 
@@ -42,14 +46,16 @@ get_header(); ?>
 			<div class="instagram-plugin-container"><?php echo do_shortcode('[enjoyinstagram_mb]'); ?></div>
 		</div> <!-- END COLUMNS -->
 	</div> <!-- END ROW -->
-
-	<div class="color-segment bottom">
-		<hr class="solid" />
-		<div class="segment red"></div>
-	</div>
+	<hr class="segment-divider" />
 </section> <!-- END SECTION -->
 
 <section class="categories">
+
+	<div class="color-segment">
+		<div class="segment blue"></div>
+		<hr class="solid" />
+	</div>
+
 	<div class="row">
 		<div class="small-12 large-12 columns">
 			<h2>Kategorien</h2>
@@ -61,7 +67,7 @@ get_header(); ?>
 
 			<div class="small-12 medium-4 large-4 columns">
 				<div class="shield kids">
-					<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/cat-banner-kids.svg" alt="Category Banner Kids">
+					<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/cat-banner-kids-2.svg" alt="Category Banner Kids">
 					<span class="shield-headline">Minions</span>
 				</div>
 				<hr class="solid-cat"/>
@@ -70,7 +76,7 @@ get_header(); ?>
 
 			<div class="small-12 medium-4 large-4 columns">
 				<div class="shield logo">
-					<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/cat-banner-logo.svg" alt="Category Banner Kids">
+					<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/cat-banner-logo-2.svg" alt="Category Banner Kids">
 					<span class="shield-headline">Symbols</span>
 				</div>
 				<hr class="solid-cat"/>
@@ -79,21 +85,21 @@ get_header(); ?>
 
 			<div class="small-12 medium-4 large-4 columns">
 				<div class="shield geek">
-					<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/cat-banner-geek.svg" alt="Category Banner Kids">
+					<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/cat-banner-geek-2.svg" alt="Category Banner Kids">
 					<span class="shield-headline">Portrait</span>
 				</div>
 				<hr class="solid-cat"/>
 				<p>Manchego smelly cheese stinking bishop. Everyone loves dolcelatte hard cheese</p>
 			</div><!-- END COLUMNS -->
 
-		</div>
-
+		</div> <!-- END CATEGORY FEATURE -->
 	</div> <!-- END ROW -->
+	<hr class="segment-divider" />
 </section> <!-- END SECTION -->
 
 <section class="spreadshop">
-	<div class="color-segment top">
-		<div class="segment red"></div>
+	<div class="color-segment">
+		<div class="segment yellow"></div>
 		<hr class="solid" />
 	</div>
 
@@ -104,21 +110,21 @@ get_header(); ?>
 			<p class="headline-feature">Port-salut cauliflower cheese cheese slices. Swiss gouda stinking bishop cheesecake blue castello cottage cheese camembert de normandie babybel.</p>
 
 			<div class="category-pages">
-				<button class="button">
+				<button class="button yellow">
 					<a href="http://www.google.com">
 						<i class="fa fa-futbol-o"></i>
 						<span data-hover="../more">kids shirt</span>
 					</a>
 				</button>
 
-				<button class="button">
+				<button class="button red">
 					<a href="http://www.google.com">
 						<i class="fa fa-paint-brush"></i>
 						<span data-hover="../more">logo shirt</span>
 					</a>
 				</button>
 
-				<button class="button">
+				<button class="button blue">
 					<a href="http://www.google.com">
 						<i class="fa fa-gamepad"></i>
 						<span data-hover="../more">geek shirt</span>
@@ -133,17 +139,17 @@ get_header(); ?>
 			$allContent = apply_filters('the_content', $post->post_content);
 			echo $allContent;
 			?>
-
 		</div> <!-- END COLUMNS -->
 	</div> <!-- END ROW -->
-
-	<div class="color-segment bottom">
-		<hr class="solid" />
-		<div class="segment red"></div>
-	</div>
+	<hr class="segment-divider" />
 </section> <!-- END SECTION -->
 
 <section class="contact">
+	<div class="color-segment">
+		<div class="segment red"></div>
+		<hr class="solid" />
+	</div>
+
 	<div class="row">
 		<div class="small-12 large-12 columns">
 			<h2>Kontakt</h2>
@@ -154,6 +160,7 @@ get_header(); ?>
 			</div>
 		</div> <!-- END COLUMNS -->
 	</div> <!-- END ROW -->
+	<hr class="segment-divider" />
 </section> <!-- END SECTION -->
 
 <?php get_footer(); ?>

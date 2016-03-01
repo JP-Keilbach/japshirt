@@ -56,15 +56,19 @@
 	line-height: 44px;
 	padding: 0 0 0 15px;
 	background: transparent;
-	border: 1px solid rgba(30, 30, 30, 0.5);
+	border: 1px solid rgba(255, 255, 255, 0.5);
 	margin: 0 15px;
 
 	.menu-icon::after {
-		background: #1E1E1E;
+		background: $sun;
 
-		-webkit-box-shadow: 0 7px 0 #1e1e1e, 0 14px 0 #1E1E1E;
-		   -moz-box-shadow: 0 7px 0 #1e1e1e, 0 14px 0 #1E1E1E;
-		        box-shadow: 0 7px 0 #1e1e1e, 0 14px 0 #1E1E1E;
+		//-webkit-box-shadow: 0 7px 0 #FFFFFF, 0 14px 0 #FFFFFF;
+		//   -moz-box-shadow: 0 7px 0 #FFFFFF, 0 14px 0 #FFFFFF;
+		//        box-shadow: 0 7px 0 #FFFFFF, 0 14px 0 #FFFFFF;
+
+		-webkit-box-shadow: 0 7px 0 $flamingo, 0 14px 0 $curiousBlue;
+		   -moz-box-shadow: 0 7px 0 $flamingo, 0 14px 0 $curiousBlue;
+		        box-shadow: 0 7px 0 $flamingo, 0 14px 0 $curiousBlue;
 	}
 }
 
@@ -74,7 +78,7 @@
 		font-size: rem-calc(20px);
 		text-transform: lowercase;
 		letter-spacing: 2px;
-		color: #1E1E1E;
+		color: #FFFFFF;
 	}
 }
 /* ----------------------- *
@@ -101,7 +105,7 @@
 
 			a {
 				overflow: hidden;
-				border-left: 1px solid rgba(30, 30, 30, 0.5);
+				border-left: 1px solid rgba(255, 255, 255, 0.5);
 				padding: 0 20px 0 0;
 				height: 47px;
 			}
@@ -110,9 +114,10 @@
 				position: relative;
 				display: inline-block;
 				vertical-align: baseline;
+
 				-webkit-transition: -webkit-transform 0.3s;
-				-moz-transition: -moz-transform 0.3s;
-				transition: transform 0.3s;
+				   -moz-transition: -moz-transform 0.3s;
+				        transition: transform 0.3s;
 			}
 
 			a span::before {
@@ -120,21 +125,26 @@
 				top: 100%;
 				content: attr(data-hover);
 				font-weight: 700;
+
 				-webkit-transform: translate3d(0, 0, 0);
-				-moz-transform: translate3d(0, 0, 0);
-				transform: translate3d(0, 0, 0);
+				   -moz-transform: translate3d(0, 0, 0);
+				        transform: translate3d(0, 0, 0);
 			}
 
-			a:hover i {
-				background: $primary-color;
-				color: #FFFFFF;
+			a:hover {
+				i { color: #FFFFFF; }
+
+				i.fa-facebook-official { background-color: $curiousBlue; }
+				 i.fa-pinterest-square { background-color: $flamingo; }
+				        i.fa-instagram { background-color: $sun; }
+
 			}
 
 			a:hover span,
 			a:focus span {
 				-webkit-transform: translateY(-100%);
-				-moz-transform: translateY(-100%);
-				transform: translateY(-100%);
+				   -moz-transform: translateY(-100%);
+				        transform: translateY(-100%);
 			}
 		}
 
@@ -142,22 +152,22 @@
 			background-color: rgba(255, 255, 255, 0.5);
 			margin-right: 15px;
 		}
+
+
 	}
 
 	.top-bar-social-tablet {
 		float: left;
 		margin-left: 20px;
 
-		.menu a:hover:not(.button) {
-			background: rgba(244, 98, 83, 0.8);
 
-			i {
-				color: #FFFFFF;
-			}
-		}
+
+		.menu a.icon-facebook:hover:not(.button) { background: $curiousBlue; }
+		.menu a.icon-instagram:hover:not(.button) { background: $sun; }
+		.menu a.icon-pinterest:hover:not(.button) { background: $flamingo; }
 
 		ul li:first-child a {
-			border-left: 1px solid rgba(30, 30, 30, 0.5)
+			border-left: 1px solid rgba(255, 255, 255, 0.5)
 		}
 
 		ul li.menu-item-social {
@@ -178,7 +188,7 @@
 			float: left;
 			width: 48px;
 			height: 48px;
-			color: #1E1E1E;
+			color: #FFFFFF;
 			line-height: 44px;
 			text-align: center;
 		}
@@ -186,7 +196,7 @@
 
 	.menu .home a {
 		color: #FFFFFF;
-		border-left: 1px solid rgba(30, 30, 30, 0.5);
+		border-left: 1px solid rgba(255, 255, 255, 0.5);
 		padding: 0px;
 
 		i {
@@ -203,9 +213,12 @@
 		line-height: 44px;
 		padding-top: 0;
 		padding-bottom: 0;
-		border-top: 1px solid rgba(30, 30, 30, 0.5);
-		border-right: 1px solid rgba(30, 30, 30, 0.5);
-		border-bottom: 1px solid rgba(30, 30, 30, 0.5);
+
+		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+		 border-right: 1px solid rgba(255, 255, 255, 0.5);
+		   border-top: 1px solid rgba(255, 255, 255, 0.5);
+
+
 
 		&:hover:not(.button) {
 			background: rgba(255, 255, 255, 0.3);
@@ -218,7 +231,7 @@
 		font-size: rem-calc(20px);
 		text-transform: lowercase;
 		letter-spacing: 2px;
-		color: #1E1E1E;
+		color: #FFFFFF;
 	}
 
 	/* Dropdown Menu *
@@ -231,7 +244,7 @@
 
 		a {
 			border-top: none;
-			border-left: 1px solid rgba(30,30,30,0.5);
+			border-left: 1px solid rgba(255, 255, 255, 0.5);
 		}
 	}
 

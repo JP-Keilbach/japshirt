@@ -84,19 +84,19 @@
 			<div class="top-bar-social-tablet hide-for-large">
 				<ul class="menu">
 					<li class="menu-item-social">
-						<a href="http://www.facebook.com/japshirts">
+						<a class="icon-facebook" href="http://www.facebook.com/japshirts">
 							<i class="fa fa-facebook-official"></i>
 						</a>
 					</li>
 
 					<li class="menu-item-social">
-						<a href="http://www.instagram.com/japshirt">
+						<a class="icon-instagram" href="http://www.instagram.com/japshirt">
 							<i class="fa fa-instagram"></i>
 						</a>
 					</li>
 
 					<li class="menu-item-social">
-						<a href="#">
+						<a class="icon-pinterest" href="#">
 							<i class="fa fa-pinterest-square"></i>
 						</a>
 					</li>
@@ -109,14 +109,15 @@
 			<div class="row">
 
 				<div class="small-4-centered large-4 large-centered columns">
-					<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/japshirt-logo.svg" alt="Japshirt Logo" class="logo">
+					<div class="logo-container">
+						<a href="#spreadshop"><span>zum shop</span></a>
+					</div>
+<!--					<img src="--><?php //echo get_bloginfo('template_directory'); ?><!--/assets/images/logo.png" alt="Japshirt Logo" class="logo">-->
 				</div>
 
 			</div>
 
 		</div>
-
-
 
 		<hr class="bottom-line white">
 

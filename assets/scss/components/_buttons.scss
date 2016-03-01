@@ -22,7 +22,7 @@ button.button {
 	font-family: $header-font-family;
 	font-size: 20px;
 	line-height: 54px;
-	border: 1px solid #1e1e1e;
+	border: 1px solid $codGray;
 
 	a {
 		display: block;
@@ -39,27 +39,28 @@ button.button {
 		letter-spacing: 2px;
 		text-transform: lowercase;
 		-webkit-transition: -webkit-transform 0.3s;
-		-moz-transition: -moz-transform 0.3s;
-		transition: transform 0.3s;
+		   -moz-transition: -moz-transform 0.3s;
+		        transition: transform 0.3s;
 	}
 
 	a span::before {
 		position: absolute;
 		top: 100%;
 		content: attr(data-hover);
+
 		-webkit-transform: translate3d(0,0,0);
-		-moz-transform: translate3d(0,0,0);
-		transform: translate3d(0,0,0);
+		   -moz-transform: translate3d(0,0,0);
+		        transform: translate3d(0,0,0);
 	}
 
 	a:hover span,
 	a:focus span {
-		background-color: $primary-color;
+		// background-color: $primary-color;
 		color: #FFFFFF;
 
 		-webkit-transform: translateY(-100%);
-		-moz-transform: translateY(-100%);
-		transform: translateY(-100%);
+		   -moz-transform: translateY(-100%);
+		        transform: translateY(-100%);
 	}
 
 	i {
@@ -78,7 +79,7 @@ button.button {
 }
 
 .button:hover {
-	background-color: $primary-color;
+	// background-color: $primary-color;
 }
 
 .button:hover i {
@@ -88,12 +89,31 @@ button.button {
 
 // 00 - Color Variations
 .button.gray {
-	i { background: #BABABA; }
+	i { background: $gray; }
 	&:hover i { background: #FFFFFF; }
 }
 
 .button.blue {
-	i { background: $CuriousBlue; }
+	&:hover { background: $curiousBlue; }
+	i { background: $curiousBlue; }
+	&:hover i { background: #FFFFFF; }
+}
+
+.button.yellow {
+	&:hover { background: $sun; }
+
+	i { background: $sun; }
+
+	&:hover i {
+		background: #FFFFFF;
+	}
+}
+
+.button.red {
+	&:hover { background: $flamingo; }
+
+	i { background: $flamingo; }
+
 	&:hover i { background: #FFFFFF; }
 }
 
