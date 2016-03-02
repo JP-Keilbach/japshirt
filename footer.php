@@ -127,7 +127,7 @@
 								<button type="button" class="button gray inverse">
 									<a href="">
 										<i class="fa fa-shopping-cart"></i>
-										<span data-hover="/jabshirt">Bestellungen</span>
+										<span data-hover="mehr info">Bestellungen</span>
 									</a>
 								</button>
 							</li>
@@ -136,7 +136,7 @@
 								<button type="button" class="button gray inverse">
 									<a href="">
 										<i class="fa fa-question"></i>
-										<span data-hover="/jabshirt">Spreadhelp</span>
+										<span data-hover="mehr info">Spreadhelp</span>
 									</a>
 								</button>
 							</li>
@@ -145,7 +145,7 @@
 								<button type="button" class="button gray">
 									<a href="">
 										<i class="fa fa-clock-o"></i>
-										<span data-hover="/jabshirt">Lieferzeiten</span>
+										<span data-hover="mehr info">Lieferzeiten</span>
 									</a>
 								</button>
 							</li>
@@ -154,7 +154,7 @@
 								<button type="button" class="button gray">
 									<a href="">
 										<i class="fa fa-credit-card"></i>
-										<span data-hover="/jabshirt">Zahlungsarten</span>
+										<span data-hover="mehr info">Zahlungsarten</span>
 									</a>
 								</button>
 							</li>
@@ -177,7 +177,7 @@
 							<li class="empty-cell left"></li>
 							<li class="facebook"><a href=""><i class="fa fa-facebook"></i></a></li>
 							<li class="instagram"><a href=""><i class="fa fa-instagram"></i></a></li>
-							<li class="pinterest"><a href=""><i class="fa fa-pinterest"></i></a></li>
+							<li class="pinterest"><a href=""><i class="fa fa-pinterest-square"></i></a></li>
 							<li class="spreadshirt"><a href=""><i class="fa fa-bolt"></i></a></li>
 							<li class="empty-cell right"></li>
 						</ul>

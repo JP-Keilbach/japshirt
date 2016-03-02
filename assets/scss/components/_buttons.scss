@@ -95,26 +95,26 @@ button.button {
 
 .button.blue {
 	&:hover { background: $curiousBlue; }
-	i { background: $curiousBlue; }
 	&:hover i { background: #FFFFFF; }
+	i { background: $curiousBlue; }
 }
 
 .button.yellow {
 	&:hover { background: $sun; }
-
+	&:hover i { background: #FFFFFF; }
 	i { background: $sun; }
-
-	&:hover i {
-		background: #FFFFFF;
-	}
 }
 
 .button.red {
 	&:hover { background: $flamingo; }
-
-	i { background: $flamingo; }
-
 	&:hover i { background: #FFFFFF; }
+	i { background: $flamingo; }
+}
+
+.button.gray {
+	&:hover { background: $codGray; }
+	&:hover i { background: #FFFFFF; }
+	i { background: $gray; }
 }
 
 /* 00 - Inverse Button

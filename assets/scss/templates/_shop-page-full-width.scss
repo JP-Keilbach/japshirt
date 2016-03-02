@@ -1,0 +1,58 @@
+//  Japshirt Theme "Shop Page Full Width"
+// --------------------------------------
+//
+// Table of Content
+//
+// 01 - Shop Title
+// 02 - Shop Content
+
+
+// 01 - Shop Title
+
+.shop-content {
+	padding-top: 84px;
+	padding-bottom: 28px;
+
+	@include grid-row(12) {
+
+		header {
+
+			@include breakpoint(small) {
+				@include grid-column(12);
+			}
+
+			@include breakpoint(medium) {
+				@include grid-column(4);
+				@include grid-column-position(center);
+			}
+
+			h1 {
+				padding-bottom: 28px;
+				margin-bottom: 28px;
+				font-size: 70px;
+				text-transform: uppercase;
+				text-align: center;
+				border-bottom: 1px solid $gray;
+			}
+
+		}
+
+		.shop-entry-content {
+
+			p {
+				@include breakpoint(small) {
+					@include grid-column(12);
+				}
+
+				@include breakpoint(medium) {
+					@include grid-column(6);
+					@include grid-column-position(center);
+				}
+
+				text-align: center;
+			}
+		}
+
+
+	}
+}

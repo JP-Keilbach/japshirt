@@ -4,6 +4,21 @@ Template Name: Front
 */
 get_header(); ?>
 
+<header id="front-hero" role="banner">
+
+	<div class="row">
+		<div class="small-4-centered large-4 large-centered columns">
+			<div class="logo-container">
+				<a href="#spreadshop"><span>zum shop</span></a>
+			</div>
+			<!--					<img src="--><?php //echo get_bloginfo('template_directory'); ?><!--/assets/images/logo.png" alt="Japshirt Logo" class="logo">-->
+		</div>
+	</div> <!-- END ROW -->
+
+	<hr class="bottom-line white">
+
+</header> <!-- END HEADER -->
+
 <section class="about">
 	<div class="color-segment rainbow">
 		<div class="color-segment-inner">
@@ -66,28 +81,28 @@ get_header(); ?>
 		<div class="category-feature">
 
 			<div class="small-12 medium-4 large-4 columns">
-				<div class="shield kids">
-					<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/cat-banner-kids-2.svg" alt="Category Banner Kids">
-					<span class="shield-headline">Minions</span>
+				<div class="shield">
+					<div class="cat-banner-kids"></div>
 				</div>
+				<span class="shield-headline">Minions</span>
 				<hr class="solid-cat"/>
 				<p>Manchego smelly cheese stinking bishop. Everyone loves dolcelatte hard cheese</p>
 			</div><!-- END COLUMNS -->
 
 			<div class="small-12 medium-4 large-4 columns">
-				<div class="shield logo">
-					<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/cat-banner-logo-2.svg" alt="Category Banner Kids">
-					<span class="shield-headline">Symbols</span>
+				<div class="shield">
+					<div class="cat-banner-logo"></div>
 				</div>
+				<span class="shield-headline">Symbols</span>
 				<hr class="solid-cat"/>
 				<p>Manchego smelly cheese stinking bishop. Everyone loves dolcelatte hard cheese</p>
 			</div><!-- END COLUMNS -->
 
 			<div class="small-12 medium-4 large-4 columns">
-				<div class="shield geek">
-					<img src="<?php echo get_bloginfo('template_directory'); ?>/assets/images/cat-banner-geek-2.svg" alt="Category Banner Kids">
-					<span class="shield-headline">Portrait</span>
+				<div class="shield">
+					<div class="cat-banner-geek"></div>
 				</div>
+				<span class="shield-headline">Portrait</span>
 				<hr class="solid-cat"/>
 				<p>Manchego smelly cheese stinking bishop. Everyone loves dolcelatte hard cheese</p>
 			</div><!-- END COLUMNS -->

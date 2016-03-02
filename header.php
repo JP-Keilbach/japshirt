@@ -104,23 +104,6 @@
 			</div>
 		</nav>
 
-		<div class="header-intro">
-
-			<div class="row">
-
-				<div class="small-4-centered large-4 large-centered columns">
-					<div class="logo-container">
-						<a href="#spreadshop"><span>zum shop</span></a>
-					</div>
-<!--					<img src="--><?php //echo get_bloginfo('template_directory'); ?><!--/assets/images/logo.png" alt="Japshirt Logo" class="logo">-->
-				</div>
-
-			</div>
-
-		</div>
-
-		<hr class="bottom-line white">
-
 	</header>
 
 	<section class="container">

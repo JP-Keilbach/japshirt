@@ -23,8 +23,8 @@ p {
 
 /* Baseline Grid on / off */
 .off-canvas-content {
-	background-image: url("../images/baseline-grid.png");
-	// background: url('../images/texturetastic_gray.png') top left;
+	// background-image: url("../images/baseline-grid.png");
+	background: url('../images/texturetastic_gray.png') top left;
 }
 
 // 01 - Section header
@@ -87,6 +87,64 @@ p.headline-feature {
 .contact p {
 	font-family: "klinic_slablight";
 	color: #FFFFFF;
+}
+
+// 00 - Header Hero
+#front-hero {
+	@include breakpoint(small) {
+		background: url('../images/bg-header.jpg') center center;
+		background-size: cover;
+		background-position: center;
+		padding: rem-calc(28px) 0 rem-calc(28px) 0;
+		margin: 0;
+		height: rem-calc(672);
+		position: relative;
+		text-align: left;
+	}
+
+	@include breakpoint(medium) {
+		background: url('../images/bg-header.jpg') center bottom;
+		background-size: cover;
+		background-position: center;
+		height: rem-calc(672);
+		margin: 0;
+	}
+
+	.logo-container {
+		background: url('../images/logo.png') center center no-repeat;
+		display: table;
+		margin: 84px auto 0 auto;
+		height: 476px;
+		width: 100%;
+
+		a {
+			display: table;
+			margin: 300px auto 0 auto;
+			color: #FFFFFF;
+			font-family: $body-font-family;
+			font-size: 15px;
+			line-height: 35px;
+			text-transform: uppercase;
+
+			border-bottom: 1px solid $gray;
+			border-top: 1px solid $gray;
+
+			&:hover {
+				color: $primary-color;
+
+				border-bottom: 1px solid $primary-color;
+				border-top: 1px solid $primary-color;
+			}
+
+			span { padding: 0 10px; }
+		}
+	}
+
+	img.logo {
+		display: table;
+		margin: 84px auto 0 auto;
+		height: 476px;
+	}
 }
 
 // 04 - About Section
@@ -191,23 +249,41 @@ p.headline-feature {
 	.category-feature {
 		.shield {
 			display: table;
-			margin: 0 auto;
+			margin: 0 auto 28px auto;
 
 			img {
 				height: 364px;
 				margin-bottom: rem-calc(28);
 			}
 
-			span {
-				display: block;
-				margin-bottom: 0;
-				color: #FFFFFF;
-				font-family: klinic_slablight;
-				font-size: 20px;
-				text-align: center;
-				text-transform: uppercase;
-				letter-spacing: 2px;
+			.cat-banner-kids {
+				background: url('../images/cat-banner-kids.svg') center top no-repeat;
+				width: 168px;
+				height: 364px;
 			}
+
+			.cat-banner-logo {
+				background: url('../images/cat-banner-logo.svg') center top no-repeat;
+				width: 168px;
+				height: 364px;
+			}
+
+			.cat-banner-geek {
+				background: url('../images/cat-banner-geek.svg') center top no-repeat;
+				width: 168px;
+				height: 364px;
+			}
+		}
+
+		span {
+			display: block;
+			margin-bottom: 0;
+			color: #FFFFFF;
+			font-family: klinic_slablight;
+			font-size: 18px;
+			text-align: center;
+			text-transform: uppercase;
+			letter-spacing: 2px;
 		}
 
 		p {

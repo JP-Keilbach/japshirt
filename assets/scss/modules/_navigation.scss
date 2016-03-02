@@ -107,7 +107,7 @@
 				overflow: hidden;
 				border-left: 1px solid rgba(255, 255, 255, 0.5);
 				padding: 0 20px 0 0;
-				height: 47px;
+				height: 56px;
 			}
 
 			a span {
@@ -160,8 +160,6 @@
 		float: left;
 		margin-left: 20px;
 
-
-
 		.menu a.icon-facebook:hover:not(.button) { background: $curiousBlue; }
 		.menu a.icon-instagram:hover:not(.button) { background: $sun; }
 		.menu a.icon-pinterest:hover:not(.button) { background: $flamingo; }
@@ -186,10 +184,10 @@
 		i {
 			display: block;
 			float: left;
-			width: 48px;
-			height: 48px;
+			width: 56px;
+			height: 56px;
 			color: #FFFFFF;
-			line-height: 44px;
+			line-height: 54px;
 			text-align: center;
 		}
 	}
@@ -200,17 +198,17 @@
 		padding: 0px;
 
 		i {
-			line-height: 44px;
+			line-height: 54px;
 			vertical-align: baseline;
 			text-align: center;
-			width: 48px;
+			width: 56px;
 			margin-right: 0;
 		}
 	}
 
 	.menu a {
-		height: 48px;
-		line-height: 44px;
+		height: 56px;
+		line-height: 54px;
 		padding-top: 0;
 		padding-bottom: 0;
 
