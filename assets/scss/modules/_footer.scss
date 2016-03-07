@@ -16,7 +16,8 @@
 // 08 - Desktop Size Settings
 
 #footer-container {
-	// background: url('../images/texturetastic_gray.png') top left;
+	background: url("../images/bg-stripes.png") top left;
+	// background: rgba(30, 30, 30, 0.05);
 	max-width: 100%;
 	width: 100%;
 	margin: 0 auto;
@@ -176,6 +177,7 @@
 			li:hover { border: none;}
 
 			li a i {
+				background: rgba(255, 255, 255, 0.2);
 				display: block;
 				width: 56px;
 				color: #1e1e1e;
@@ -228,7 +230,7 @@
 
 	// 07 - Services
 	.services {
-		background: url('../images/bg-stripes.png') top left;
+		background: rgba(255, 255, 255, 0.2);
 		padding-top: 20px;
 
 		border-bottom: 1px solid #BABABA;

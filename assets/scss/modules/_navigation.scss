@@ -14,7 +14,6 @@
 /* Fix issues for specific screen size */
 @media only screen and (min-width: 1024px) and (max-width: 1146px) {
 	.main-navigation {
-		width: 1024px;
 
 		.top-bar-social {
 			margin-top: 0;
@@ -39,7 +38,7 @@
 
 		a {
 			color: #FFFFFF;
-			font-family: 'franchise', Helvetica Neue, Helvetica, Arial, sans-serif;
+			font-family: $header-font-family;
 			font-size: rem-calc(20px);
 			text-transform: lowercase;
 			letter-spacing: 2px;
@@ -51,20 +50,15 @@
 }
 
 .title-bar {
-	height: 48px;
+	height: 56px;
 	color: #1E1E1E;
-	line-height: 44px;
+	line-height: 56px;
 	padding: 0 0 0 15px;
 	background: transparent;
-	border: 1px solid rgba(255, 255, 255, 0.5);
 	margin: 0 15px;
 
 	.menu-icon::after {
 		background: $sun;
-
-		//-webkit-box-shadow: 0 7px 0 #FFFFFF, 0 14px 0 #FFFFFF;
-		//   -moz-box-shadow: 0 7px 0 #FFFFFF, 0 14px 0 #FFFFFF;
-		//        box-shadow: 0 7px 0 #FFFFFF, 0 14px 0 #FFFFFF;
 
 		-webkit-box-shadow: 0 7px 0 $flamingo, 0 14px 0 $curiousBlue;
 		   -moz-box-shadow: 0 7px 0 $flamingo, 0 14px 0 $curiousBlue;
@@ -74,7 +68,7 @@
 
 .title-bar-title {
 	a {
-		font-family: 'franchise', Helvetica Neue, Helvetica, Arial, sans-serif;
+		font-family: $header-font-family;
 		font-size: rem-calc(20px);
 		text-transform: lowercase;
 		letter-spacing: 2px;
@@ -95,77 +89,15 @@
 
 	.top-bar-right { float: left; }
 
-	.top-bar-social {
-		float: left;
-
-		.menu-item-social {
-			display: block;
-			float: left;
-			margin-left: 20px;
-
-			a {
-				overflow: hidden;
-				border-left: 1px solid rgba(255, 255, 255, 0.5);
-				padding: 0 20px 0 0;
-				height: 56px;
-			}
-
-			a span {
-				position: relative;
-				display: inline-block;
-				vertical-align: baseline;
-
-				-webkit-transition: -webkit-transform 0.3s;
-				   -moz-transition: -moz-transform 0.3s;
-				        transition: transform 0.3s;
-			}
-
-			a span::before {
-				position: absolute;
-				top: 100%;
-				content: attr(data-hover);
-				font-weight: 700;
-
-				-webkit-transform: translate3d(0, 0, 0);
-				   -moz-transform: translate3d(0, 0, 0);
-				        transform: translate3d(0, 0, 0);
-			}
-
-			a:hover {
-				i { color: #FFFFFF; }
-
-				i.fa-facebook-official { background-color: $curiousBlue; }
-				 i.fa-pinterest-square { background-color: $flamingo; }
-				        i.fa-instagram { background-color: $sun; }
-
-			}
-
-			a:hover span,
-			a:focus span {
-				-webkit-transform: translateY(-100%);
-				   -moz-transform: translateY(-100%);
-				        transform: translateY(-100%);
-			}
-		}
-
-		i {
-			background-color: rgba(255, 255, 255, 0.5);
-			margin-right: 15px;
-		}
-
-
-	}
-
 	.top-bar-social-tablet {
 		float: left;
-		margin-left: 20px;
 
 		.menu a.icon-facebook:hover:not(.button) { background: $curiousBlue; }
 		.menu a.icon-instagram:hover:not(.button) { background: $sun; }
 		.menu a.icon-pinterest:hover:not(.button) { background: $flamingo; }
 
 		ul li:first-child a {
-			border-left: 1px solid rgba(255, 255, 255, 0.5)
+			// border-left: 1px solid rgba(255, 255, 255, 0.5)
 		}
 
 		ul li.menu-item-social {
@@ -193,16 +125,25 @@
 	}
 
 	.menu .home a {
+		overflow: hidden;
+		width: 56px;
+		height: 56px;
 		color: #FFFFFF;
-		border-left: 1px solid rgba(255, 255, 255, 0.5);
-		padding: 0px;
+		text-align: center;
+		border-left: 1px solid #393939;
+		padding: 0;
 
 		i {
-			line-height: 54px;
-			vertical-align: baseline;
-			text-align: center;
-			width: 56px;
+			background: url('../images/icon-home.svg') center center no-repeat;
+			width: 112px;
+			height: 56px;
 			margin-right: 0;
+			// line-height: 54px;
+			vertical-align: baseline;
+		}
+
+		&:hover i {
+			background-position: -56px 0;
 		}
 	}
 
@@ -212,14 +153,10 @@
 		padding-top: 0;
 		padding-bottom: 0;
 
-		border-bottom: 1px solid rgba(255, 255, 255, 0.5);
-		 border-right: 1px solid rgba(255, 255, 255, 0.5);
-		   border-top: 1px solid rgba(255, 255, 255, 0.5);
-
-
+		border-right: 1px solid #393939;
 
 		&:hover:not(.button) {
-			background: rgba(255, 255, 255, 0.3);
+			background: #393939;
 		}
 	}
 
@@ -242,7 +179,7 @@
 
 		a {
 			border-top: none;
-			border-left: 1px solid rgba(255, 255, 255, 0.5);
+			border-left: 1px solid #393939;
 		}
 	}
 
@@ -254,12 +191,16 @@
 	}
 
 	.is-dropdown-submenu-parent.is-down-arrow > a::after {
-		top: 18px;
+		top: 20px;
 		margin-right: 4px;
-		border-color: #1E1E1E transparent transparent;
+		border-color: #FFFFFF transparent transparent;
 	}
 
 	.is-dropdown-submenu > li {
+		background: $codGray;
 		width: 179px;
+
+		border-bottom: 1px solid #393939;
+
 	}
 }

@@ -53,6 +53,8 @@ button.button {
 		        transform: translate3d(0,0,0);
 	}
 
+	&:hover { background: #454545; }
+
 	a:hover span,
 	a:focus span {
 		// background-color: $primary-color;
@@ -64,7 +66,7 @@ button.button {
 	}
 
 	i {
-		background-color: $primary-color;
+		background-color: #454545;
 		display: inline-block;
 		float: left;
 		width: 56px;
@@ -88,33 +90,19 @@ button.button {
 }
 
 // 00 - Color Variations
-.button.gray {
-	i { background: $gray; }
-	&:hover i { background: #FFFFFF; }
-}
-
 .button.blue {
 	&:hover { background: $curiousBlue; }
 	&:hover i { background: #FFFFFF; }
-	i { background: $curiousBlue; }
 }
 
 .button.yellow {
 	&:hover { background: $sun; }
 	&:hover i { background: #FFFFFF; }
-	i { background: $sun; }
 }
 
 .button.red {
 	&:hover { background: $flamingo; }
 	&:hover i { background: #FFFFFF; }
-	i { background: $flamingo; }
-}
-
-.button.gray {
-	&:hover { background: $codGray; }
-	&:hover i { background: #FFFFFF; }
-	i { background: $gray; }
 }
 
 /* 00 - Inverse Button

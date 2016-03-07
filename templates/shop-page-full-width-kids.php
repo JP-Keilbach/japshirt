@@ -1,10 +1,10 @@
 <?php
 /*
-Template Name: Shop Full Width
+Template Name: Shop Full Width Kids
 */
 get_header(); ?>
 
-<header id="front-hero" role="banner">
+<header id="kids-hero" role="banner">
 
     <div class="row">
         <div class="small-4-centered large-4 large-centered columns">

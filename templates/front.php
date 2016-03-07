@@ -49,10 +49,10 @@ get_header(); ?>
 			<div class="btn-divider">
 				<span class="dash left"></span>
 				<div class="button-container">
-					<button type="button" class="button red">
+					<button type="button" class="button yellow">
 						<a href="">
 							<i class="fa fa-instagram"></i>
-							<span data-hover="/jabshirt">instagram</span>
+							<span data-hover="/japshirt">instagram</span>
 						</a>
 					</button>
 				</div>
@@ -128,21 +128,21 @@ get_header(); ?>
 				<button class="button yellow">
 					<a href="http://www.google.com">
 						<i class="fa fa-futbol-o"></i>
-						<span data-hover="../more">kids shirt</span>
+						<span data-hover="mehr info">kids shirt</span>
 					</a>
 				</button>
 
 				<button class="button red">
 					<a href="http://www.google.com">
 						<i class="fa fa-paint-brush"></i>
-						<span data-hover="../more">logo shirt</span>
+						<span data-hover="mehr info">logo shirt</span>
 					</a>
 				</button>
 
 				<button class="button blue">
 					<a href="http://www.google.com">
 						<i class="fa fa-gamepad"></i>
-						<span data-hover="../more">geek shirt</span>
+						<span data-hover="mehr info">geek shirt</span>
 					</a>
 				</button>
 

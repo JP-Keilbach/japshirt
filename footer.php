@@ -124,7 +124,7 @@
 					<div class="footer-meta-desktop">
 						<ul class="footer-meta">
 							<li class="left-outer">
-								<button type="button" class="button gray inverse">
+								<button type="button" class="button red inverse">
 									<a href="">
 										<i class="fa fa-shopping-cart"></i>
 										<span data-hover="mehr info">Bestellungen</span>
@@ -133,7 +133,7 @@
 							</li>
 
 							<li class="left-inner">
-								<button type="button" class="button gray inverse">
+								<button type="button" class="button red inverse">
 									<a href="">
 										<i class="fa fa-question"></i>
 										<span data-hover="mehr info">Spreadhelp</span>
@@ -142,7 +142,7 @@
 							</li>
 
 							<li class="right-inner">
-								<button type="button" class="button gray">
+								<button type="button" class="button red">
 									<a href="">
 										<i class="fa fa-clock-o"></i>
 										<span data-hover="mehr info">Lieferzeiten</span>
@@ -151,7 +151,7 @@
 							</li>
 
 							<li class="right-outer">
-								<button type="button" class="button gray">
+								<button type="button" class="button red">
 									<a href="">
 										<i class="fa fa-credit-card"></i>
 										<span data-hover="mehr info">Zahlungsarten</span>
@@ -192,7 +192,7 @@
 							<li><a href="#">about</a></li>
 							<li><a href="#">kategorien</a></li>
 							<li><a href="#">shop</a></li>
-							<li><a href="#">contact</a></li>
+							<li><a href="#">kontakt</a></li>
 						</ul>
 					</div>
 				</div>

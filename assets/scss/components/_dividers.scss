@@ -11,6 +11,10 @@
 // 04 - No Clue yet
 // 07 - Segment Divider
 
+hr {
+	border-color: $gray;
+}
+
 // 01 - Solid Divider
 hr.solid {
 	max-width: 100%;
