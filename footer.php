@@ -165,7 +165,7 @@
 				<div class="small-12 large-12 columns">
 					<div class="send-back">
 						<hr class="solid top">
-						<p>Passt Nicht? Schick's zurück!<br>30 Tage Lang.</p>
+						<p><a href="https://www.spreadshirt.de/hilfe-C1328/categoryId/5/articleId/932">Passt Nicht? Schick's zurück!<br>30 Tage Lang.</a></p>
 					</div>
 				</div>
 			</div> <!-- END ROW -->
@@ -175,10 +175,10 @@
 					<div class="social-bar">
 						<ul>
 							<li class="empty-cell left"></li>
-							<li class="facebook"><a href=""><i class="fa fa-facebook"></i></a></li>
-							<li class="instagram"><a href=""><i class="fa fa-instagram"></i></a></li>
-							<li class="pinterest"><a href=""><i class="fa fa-pinterest-square"></i></a></li>
-							<li class="spreadshirt"><a href=""><i class="fa fa-bolt"></i></a></li>
+							<li class="facebook"><a href="http://www.facebook.com/japshirts"><i class="fa fa-facebook"></i></a></li>
+							<li class="instagram"><a href="http://www.instagram.com/japshirt"><i class="fa fa-instagram"></i></a></li>
+							<li class="pinterest"><a href="http://www.pinterest.com"><i class="fa fa-pinterest-square"></i></a></li>
+							<li class="spreadshirt"><a href="http://www.spreadshirt.com"><i class="ci ci-spreadshirt"></i></a></li>
 							<li class="empty-cell right"></li>
 						</ul>
 					</div>

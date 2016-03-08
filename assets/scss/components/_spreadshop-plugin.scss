@@ -5,6 +5,7 @@
 	width: 100%;
 	height: 56px !important;
 	padding: 0;
+	margin-bottom: 56px;
 	border: none;
 
 	-webkit-box-shadow: none;
@@ -12,17 +13,22 @@
 	     -o-box-shadow: none;
 	        box-shadow: none;
 
+	a:first-child {
+		display: none;
+	}
+
 	#checkout {
 
 		@include breakpoint(small) {
 			width: 100%;
 			text-align: center;
 		}
+
 		@include breakpoint(medium) { width: auto; }
 
 		background: rgba(255, 255, 255, 0.5);
-		display: table;
 		float: none;
+		display: table;
 		margin: 0 auto;
 		border: 1px solid #1E1E1E;
 
@@ -43,7 +49,6 @@
 		span {
 
 			display: inline-block;
-			// float: right;
 			padding: 0 20px;
 			font-family: $header-font-family;
 			font-size: rem-calc(20px);
@@ -81,7 +86,6 @@
 	position: relative;
 }
 .spreadplugin-menu.fixed {
-	// position: relative;
 	top: 0;
 	border: none;
 
@@ -94,11 +98,12 @@
 
 // Spread Shop List
 #spreadplugin-items {
+	@include grid-column(12);
 	float: left;
 
 	#spreadplugin-list {
-		padding-top: 28px;
-		margin-top: 19px;
+		padding-top: 0;
+		margin-top: 0;
 		margin-bottom: 24px;
 
 		.spreadplugin-article {
@@ -207,6 +212,97 @@
 			-webkit-box-shadow: none;
 			-moz-box-shadow: none;
 			box-shadow: none;
+		}
+
+		// Spreadplugin Article Detail
+		.spreadplugin-article-detail {
+			@include grid-column(12);
+
+			padding-top: 0px;
+			margin-top: 19px;
+			margin-right: 0;
+
+			form {
+
+				.articleContentLeft {
+					@include grid-column(4);
+				}
+
+				.articleContentRight {
+					@include grid-column(8);
+					margin-left: 0;
+
+					h3 {
+						text-align: left;
+						text-transform: uppercase;
+						line-height: rem-calc(56);
+					}
+
+					h4 {
+						margin-bottom: 0;
+						text-transform: lowercase;
+						line-height: 56px;
+					}
+
+					span {
+						display: block;
+						width: 50px;
+						margin-right: 20px;
+						float: left;
+						line-height: 28px;
+					}
+
+					.product-description-wrapper,
+					.description-wrapper {
+						padding: 0;
+						margin-bottom: 28px;
+					}
+
+					.size-wrapper {
+
+						#size-select {
+							height: 28px;
+							padding: 0;
+							margin-bottom: 28px;
+						}
+					}
+
+					.color-wrapper {
+						.colors {
+							float: left;
+							min-height: 28px;
+							padding-top: 8px;
+							padding-bottom: 6px;
+						}
+
+						.colors li {
+							height: 28px;
+							padding-top: 7px;
+							margin-bottom: 0;
+
+						}
+					}
+
+					.quantity-wrapper {
+						span {
+							display: inline-block;
+							float: none;
+						}
+
+						#quantity {
+							display: inline-block;
+							float: none;
+							margin: 0;
+							padding: 0;
+							height: 28px;
+						}
+					}
+
+
+
+				}
+			}
+
 		}
 
 	}

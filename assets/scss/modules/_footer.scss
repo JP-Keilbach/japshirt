@@ -155,7 +155,12 @@
 			margin: 0 auto;
 			font-size: 18px;
 			text-align: center;
-			// border-bottom: 1px solid #BABABA;
+
+			a {
+				color: $codGray;
+
+				&:hover { color: $primary-color; }
+			}
 		}
 	}
 
@@ -176,18 +181,48 @@
 
 			li:hover { border: none;}
 
+			li a {
+				display: block;
+			}
+
 			li a i {
-				background: rgba(255, 255, 255, 0.2);
+				background: rgba(255, 255, 255, 0.3);
 				display: block;
 				width: 56px;
 				color: #1e1e1e;
-				line-height: 54px;
+				font-size: rem-calc(18);
+				line-height: 56px;
 				text-align: center;
 			}
 
 			li a i:hover {
-				background: $primary-color;
 				color: #FFFFFF;
+			}
+
+			li.facebook a i:hover { background: $curiousBlue; }
+			li.instagram a i:hover { background: $sun; }
+			li.pinterest a i:hover { background: $flamingo; }
+
+			li.spreadshirt {
+
+				a {
+					display: block;
+					overflow: hidden;
+					width: 56px;
+					height: 56px;
+
+					i {
+						background: url('../images/icon-spreadshirt.svg') left center no-repeat;
+						background-color: rgba(255, 255, 255, 0.3);
+						width: 112px;
+						height: 56px;
+
+						&:hover {
+							background-position: -56px 0;
+							background-color: $curiousBlue;
+						}
+					}
+				}
 			}
 
 			li.empty-cell {
@@ -217,7 +252,7 @@
 				list-style: none;
 
 				a {
-					color: #BABABA;
+					color: $codGray;
 					padding: 0 10px;
 					line-height: 28px;
 					text-transform: uppercase;
